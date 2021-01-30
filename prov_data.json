@@ -1,0 +1,3909 @@
+{
+  "ILN": {
+    "name": "Ilocos Norte",
+    "region": "I",
+    "capital": "Laoag",
+    "founded": "1818",
+    "area" : 3467.89,
+    "population" : {
+      "1990": 461661,
+      "1995": 482651,
+      "2000": 514241,
+      "2007": 547284,
+      "2010": 568017,
+      "2015": 593081
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Batac",
+        "type": "CC"
+      },
+      {
+        "name": "Laoag",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Adams",
+      "Bacarra",
+      "Badoc",
+      "Bangui",
+      "Banna",
+      "Burgos",
+      "Carasi",
+      "Currimao",
+      "Dingras",
+      "Dumalneg",
+      "Marcos",
+      "Nueva Era",
+      "Pagudpud",
+      "Paoay",
+      "Pasuquin",
+      "Piddig",
+      "Pinili",
+      "San Nicolas",
+      "Sarrat",
+      "Solsona",
+      "Vintar"
+    ]
+  },
+  "ILS": {
+    "name": "Ilocos Sur",
+    "region": "I",
+    "capital": "Vigan",
+    "founded": "1572",
+    "area" : 2596,
+    "population" : {
+      "1990": 519966,
+      "1995": 545385,
+      "2000": 594206,
+      "2007": 632255,
+      "2010": 658587,
+      "2015": 689668
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Candon",
+        "type": "CC"
+      },
+      {
+        "name": "Vigan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Alilem",
+      "Banayoyo",
+      "Bantay",
+      "Burgos",
+      "Cabugao",
+      "Caoayan",
+      "Cervantes",
+      "Galimuyod",
+      "Gregorio del Pilar",
+      "Lidlidda",
+      "Magsingal",
+      "Nagbukel",
+      "Narvacan",
+      "Quirino",
+      "Salcedo",
+      "San Emilio",
+      "San Esteban",
+      "San Ildefonso",
+      "San Juan",
+      "San Vicente",
+      "Santa",
+      "Santa Catalina",
+      "Santa Cruz",
+      "Santa Lucia",
+      "Santa Maria",
+      "Santiago",
+      "Santo Domingo",
+      "Sigay",
+      "Sinait",
+      "Sugpon",
+      "Suyo",
+      "Tagudin"
+    ]
+  },
+  "LUN": {
+    "name": "La Union",
+    "region": "I",
+    "capital": "San Fernando",
+    "founded": "1850-03-02",
+    "area" : 1497.7,
+    "population" : {
+      "1990": 548742,
+      "1995": 597442,
+      "2000": 657945,
+      "2007": 720972,
+      "2010": 741906,
+      "2015": 786653
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "San Fernando",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Agoo",
+      "Aringay",
+      "Bacnotan",
+      "Bagulin",
+      "Balaoan",
+      "Bangar",
+      "Bauang",
+      "Burgos",
+      "Caba",
+      "Luna",
+      "Naguilian",
+      "Pugo",
+      "Rosario",
+      "San Gabriel",
+      "San Juan",
+      "Santo Tomas",
+      "Santol",
+      "Sudipen",
+      "Tubao"
+    ]
+  },
+  "PAN": {
+    "name": "Pangasinan",
+    "region": "I",
+    "capital": "Lingayen",
+    "founded": "1580-04-05",
+    "area" : 5451.01,
+    "population" : {
+      "1990": 2020273,
+      "1995": 2178412,
+      "2000": 2434086,
+      "2007": 2645395,
+      "2010": 2779862,
+      "2015": 2956726
+    },
+    "districts": 6,
+    "cities": [
+      {
+        "name": "Alaminos",
+        "type": "CC"
+      },
+      {
+        "name": "Dagupan",
+        "type": "ICC"
+      },
+      {
+        "name": "San Carlos",
+        "type": "CC"
+      },
+      {
+        "name": "Urdaneta",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Agno",
+      "Aguilar",
+      "Alcala",
+      "Anda",
+      "Asingan",
+      "Balungao",
+      "Bani",
+      "Basista",
+      "Bautista",
+      "Bayambang",
+      "Binalonan",
+      "Binmaley",
+      "Bolinao",
+      "Bugallon",
+      "Burgos",
+      "Calasiao",
+      "Dasol",
+      "Infanta",
+      "Labrador",
+      "Laoac",
+      "Lingayen",
+      "Mabini",
+      "Malasiqui",
+      "Manaoag",
+      "Mangaldan",
+      "Mangatarem",
+      "Mapandan",
+      "Natividad",
+      "Pozorrubio",
+      "Rosales",
+      "San Fabian",
+      "San Jacinto",
+      "San Manuel",
+      "San Nicolas",
+      "San Quintin",
+      "Santa Barbara",
+      "Santa Maria",
+      "Santo Tomas",
+      "Sison",
+      "Sual",
+      "Tayug",
+      "Umingan",
+      "Urbiztondo",
+      "Villasis"
+    ]
+  },
+  "BTN": {
+    "name": "Batanes",
+    "region": "II",
+    "capital": "Basco",
+    "founded": "1909",
+    "area" : 219.01,
+    "population" : {
+      "1990": 15026,
+      "1995": 14180,
+      "2000": 16467,
+      "2007": 15974,
+      "2010": 16604,
+      "2015": 17246
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Basco",
+      "Itbayat",
+      "Ivana",
+      "Mahatao",
+      "Sabtang",
+      "Uyugan"
+    ]
+  },
+  "CAG": {
+    "name": "Cagayan",
+    "region": "II",
+    "capital": "Tuguegarao",
+    "founded": "1583-06-29",
+    "area" : 9295.75,
+    "population" : {
+      "1990": 829867,
+      "1995": 895050,
+      "2000": 993580,
+      "2007": 1072571,
+      "2010": 1124773,
+      "2015": 1199320
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Tuguegarao",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Abulug",
+      "Alcala",
+      "Allacapan",
+      "Amulung",
+      "Aparri",
+      "Baggao",
+      "Ballesteros",
+      "Buguey",
+      "Calayan",
+      "Camalaniugan",
+      "Claveria",
+      "Enrile",
+      "Gattaran",
+      "Gonzaga",
+      "Iguig",
+      "Lal-lo",
+      "Lasam",
+      "Pamplona",
+      "Peñablanca",
+      "Piat",
+      "Rizal",
+      "Sanchez-Mira",
+      "Santa Ana",
+      "Santa Praxedes",
+      "Santa Teresita",
+      "Santo Niño",
+      "Solana",
+      "Tuao"
+    ]
+  },
+  "ISA": {
+    "name": "Isabela",
+    "region": "II",
+    "capital": "Ilagan",
+    "founded": "1856-05-01",
+    "area" : 12414.93,
+    "population" : {
+      "1990": 1080341,
+      "1995": 1160721,
+      "2000": 1287575,
+      "2007": 1401495,
+      "2010": 1489645,
+      "2015": 1593566
+    },
+    "districts": 6,
+    "cities": [
+      {
+        "name": "Cauayan",
+        "type": "CC"
+      },
+      {
+        "name": "Ilagan",
+        "type": "CC"
+      },
+      {
+        "name": "Santiago",
+        "type": "ICC"
+      }
+    ],
+    "municipalities": [
+      "Alicia",
+      "Angadanan",
+      "Aurora",
+      "Benito Soliven",
+      "Burgos",
+      "Cabagan",
+      "Cabatuan",
+      "Cordon",
+      "Delfin Albano",
+      "Dinapigue",
+      "Divilacan",
+      "Echague",
+      "Gamu",
+      "Jones",
+      "Luna",
+      "Maconacon",
+      "Mallig",
+      "Naguilian",
+      "Palanan",
+      "Quezon",
+      "Quirino",
+      "Ramon",
+      "Reina Mercedes",
+      "Roxas",
+      "San Agustin",
+      "San Guillermo",
+      "San Isidro",
+      "San Manuel",
+      "San Mariano",
+      "San Mateo",
+      "San Pablo",
+      "Santa Maria",
+      "Santo Tomas",
+      "Tumauini"
+    ]
+  },
+  "NUV": {
+    "name": "Nueva Vizcaya",
+    "region": "II",
+    "capital": "Bayombong",
+    "founded": "1839",
+    "area" : 3975.67,
+    "population" : {
+      "1990": 301179,
+      "1995": 334965,
+      "2000": 366962,
+      "2007": 397837,
+      "2010": 421355,
+      "2015": 452287
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Alfonso Castañeda",
+      "Ambaguio",
+      "Aritao",
+      "Bagabag",
+      "Bambang",
+      "Bayombong",
+      "Diadi",
+      "Dupax del Norte",
+      "Dupax del Sur",
+      "Kasibu",
+      "Kayapa",
+      "Quezon",
+      "Santa Fe",
+      "Solano",
+      "Villaverde"
+    ]
+  },
+  "QUI": {
+    "name": "Quirino",
+    "region": "II",
+    "capital": "Cabarroguis",
+    "founded": "1966-06-18",
+    "area" : 2323.47,
+    "population" : {
+      "1990": 114132,
+      "1995": 131119,
+      "2000": 148575,
+      "2007": 163610,
+      "2010": 176786,
+      "2015": 188991
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Aglipay",
+      "Cabarroguis",
+      "Diffun",
+      "Maddela",
+      "Nagtipunan",
+      "Saguday"
+    ]
+  },
+  "APA": {
+    "name": "Apayao",
+    "region": "CAR",
+    "capital": "Kabugao",
+    "founded": "1995-05-08",
+    "area" : 4413.35,
+    "population" : {
+      "1990": 74720,
+      "1995": 83660,
+      "2000": 97129,
+      "2007": 103633,
+      "2010": 112636,
+      "2015": 119184
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Calanasan",
+      "Conner",
+      "Flora",
+      "Kabugao",
+      "Luna",
+      "Pudtol",
+      "Santa Marcela"
+    ]
+  },
+  "ABR": {
+    "name": "Abra",
+    "region": "CAR",
+    "capital": "Bangued",
+    "founded": "1917-03-10",
+    "area" : 4165.25,
+    "population" : {
+      "1990": 184743,
+      "1995": 195964,
+      "2000": 209491,
+      "2007": 230953,
+      "2010": 234733,
+      "2015": 241160
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Bangued",
+      "Boliney",
+      "Bucay",
+      "Bucloc",
+      "Daguioman",
+      "Danglas",
+      "Dolores",
+      "La Paz",
+      "Lacub",
+      "Lagangilang",
+      "Lagayan",
+      "Langiden",
+      "Licuan-Baay",
+      "Luba",
+      "Malibcong",
+      "Manabo",
+      "Peñarrubia",
+      "Pidigan",
+      "Pilar",
+      "Sallapadan",
+      "San Isidro",
+      "San Juan",
+      "San Quintin",
+      "Tayum",
+      "Tineg",
+      "Tubo",
+      "Villaviciosa"
+    ]
+  },
+  "KAL": {
+    "name": "Kalinga",
+    "region": "CAR",
+    "capital": "Tabuk",
+    "founded": "1995-05-08",
+    "area" : 3231.25,
+    "population" : {
+      "1990": 137055,
+      "1995": 154145,
+      "2000": 174023,
+      "2007": 182326,
+      "2010": 201613,
+      "2015": 212680
+    },
+    "districts": 1,
+    "cities": [
+      {
+        "name": "Tabuk",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Balbalan",
+      "Lubuagan",
+      "Pasil",
+      "Pinukpuk",
+      "Rizal",
+      "Tanudan",
+      "Tinglayan"
+    ]
+  },
+  "MOU": {
+    "name": "Mountain Province",
+    "region": "CAR",
+    "capital": "Bontoc",
+    "founded": "1908",
+    "area" : 2157.38,
+    "population" : {
+      "1990": 116535,
+      "1995": 130755,
+      "2000": 140631,
+      "2007": 148661,
+      "2010": 154187,
+      "2015": 154590
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Barlig",
+      "Bauko",
+      "Besao",
+      "Bontoc",
+      "Natonin",
+      "Paracelis",
+      "Sabangan",
+      "Sadanga",
+      "Sagada",
+      "Tadian"
+    ]
+  },
+  "IFU": {
+    "name": "Ifugao",
+    "region": "CAR",
+    "capital": "Lagawe",
+    "founded": "1966-06-18",
+    "area" : 2628.21,
+    "population" : {
+      "1990": 147281,
+      "1995": 149598,
+      "2000": 161623,
+      "2007": 180711,
+      "2010": 191078,
+      "2015": 202802
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Aguinaldo",
+      "Alfonso Lista",
+      "Asipulo",
+      "Banaue",
+      "Hingyon",
+      "Hungduan",
+      "Kiangan",
+      "Lagawe",
+      "Lamut",
+      "Mayoyao",
+      "Tinoc"
+    ]
+  },
+  "BEN": {
+    "name": "Benguet",
+    "region": "CAR",
+    "capital": "La Trinidad",
+    "founded": "1966-06-16",
+    "area" : 2769.08,
+    "population" : {
+      "1990": 485857,
+      "1995": 540716,
+      "2000": 582515,
+      "2007": 674459,
+      "2010": 722620,
+      "2015": 791590
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Baguio",
+        "type": "HUC"
+      }
+    ],
+    "municipalities": [
+      "Atok",
+      "Bakun",
+      "Bokod",
+      "Buguias",
+      "Itogon",
+      "Kabayan",
+      "Kapangan",
+      "Kibungan",
+      "La Trinidad",
+      "Mankayan",
+      "Sablan",
+      "Tuba",
+      "Tublay"
+    ]
+  },
+  "AUR": {
+    "name": "Aurora",
+    "region": "III",
+    "capital": "Baler",
+    "founded": "1951-06-14",
+    "area" : 3147.32,
+    "population" : {
+      "1990": 139573,
+      "1995": 159621,
+      "2000": 173797,
+      "2007": 187802,
+      "2010": 201233,
+      "2015": 214336
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Baler",
+      "Casiguran",
+      "Dilasag",
+      "Dinalungan",
+      "Dingalan",
+      "Dipaculao",
+      "Maria Aurora",
+      "San Luis"
+    ]
+  },
+  "NUE": {
+    "name": "Nueva Ecija",
+    "region": "III",
+    "capital": "Palayan",
+    "founded": "1801-04-25",
+    "area" : 5751.33,
+    "population" : {
+      "1990": 1312680,
+      "1995": 1505827,
+      "2000": 1659883,
+      "2007": 1853853,
+      "2010": 1955373,
+      "2015": 2151461
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Cabanatuan",
+        "type": "CC"
+      },
+      {
+        "name": "Gapan",
+        "type": "CC"
+      },
+      {
+        "name": "Muñoz",
+        "type": "CC"
+      },
+      {
+        "name": "Palayan",
+        "type": "CC"
+      },
+      {
+        "name": "San Jose",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Aliaga",
+      "Bongabon",
+      "Cabiao",
+      "Carrangalan",
+      "Cuyapo",
+      "Gabaldon",
+      "General Mamerto Natividad",
+      "General Tinio",
+      "Guimba",
+      "Jaen",
+      "Laur",
+      "Licab",
+      "Llanera",
+      "Lupao",
+      "Nampicuan",
+      "Pantabangan",
+      "Peñaranda",
+      "Quezon",
+      "Rizal",
+      "San Antonio",
+      "San Isidro",
+      "San Leonardo",
+      "Santa Rosa",
+      "Santo Domingo",
+      "Talavera",
+      "Talugtug",
+      "Zaragoza"
+    ]
+  },
+  "TAR": {
+    "name": "Tarlac",
+    "region": "III",
+    "capital": "Tarlac",
+    "founded": "1872",
+    "area" : 3053.6,
+    "population" : {
+      "1990": 859708,
+      "1995": 945810,
+      "2000": 1068783,
+      "2007": 1243449,
+      "2010": 1273240,
+      "2015": 1366027
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Tarlac",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Anao",
+      "Bamban",
+      "Camiling",
+      "Capas",
+      "Concepcion",
+      "Gerona",
+      "La Paz",
+      "Mayantoc",
+      "Moncada",
+      "Paniqui",
+      "Pura",
+      "Ramos",
+      "San Clemente",
+      "San Jose",
+      "San Manuel",
+      "Santa Ignacia",
+      "Victoria"
+    ]
+  },
+  "ZMB": {
+    "name": "Zambales",
+    "region": "III",
+    "capital": "Iba",
+    "founded": "1578",
+    "area" : 3830.83,
+    "population" : {
+      "1990": 562992,
+      "1995": 569266,
+      "2000": 627802,
+      "2007": 720355,
+      "2010": 755621,
+      "2015": 823888
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Olongapo",
+        "type": "HUC"
+      }
+    ],
+    "municipalities": [
+      "Botolan",
+      "Cabangan",
+      "Candelaria",
+      "Castillejos",
+      "Iba",
+      "Masinloc",
+      "Palauig",
+      "San Antonio",
+      "San Felipe",
+      "San Marcelino",
+      "San Narciso",
+      "Santa Cruz",
+      "Subic"
+    ]
+  },
+  "PAM": {
+    "name": "Pampanga",
+    "region": "III",
+    "capital": "San Fernando",
+    "founded": "1571-12-11",
+    "area" : 2062.47,
+    "population" : {
+      "1990": 1532615,
+      "1995": 1635767,
+      "2000": 1878913,
+      "2007": 2229349,
+      "2010": 2340385,
+      "2015": 2609744
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Angeles",
+        "type": "HUC"
+      },
+      {
+        "name": "Mabalacat",
+        "type": "CC"
+      },
+      {
+        "name": "San Fernando",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Apalit",
+      "Arayat",
+      "Bacolor",
+      "Candaba",
+      "Floridablanca",
+      "Guagua",
+      "Lubao",
+      "Macabebe",
+      "Magalang",
+      "Masantol",
+      "Mexico",
+      "Minalin",
+      "Porac",
+      "San Luis",
+      "San Simon",
+      "Santa Ana",
+      "Santa Rita",
+      "Santo Tomas",
+      "Sasmuan"
+    ]
+  },
+  "BUL": {
+    "name": "Bulacan",
+    "region": "III",
+    "capital": "Malolos",
+    "founded": "1578-08-15",
+    "area" : 2796.1,
+    "population" : {
+      "1990": 1505219,
+      "1995": 1784441,
+      "2000": 2234088,
+      "2007": 2826926,
+      "2010": 2924433,
+      "2015": 3292071
+    },
+    "districts": 5,
+    "cities": [
+      {
+        "name": "Malolos",
+        "type": "CC"
+      },
+      {
+        "name": "Meycauayan",
+        "type": "CC"
+      },
+      {
+        "name": "San Jose del Monte",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Angat",
+      "Balagtas",
+      "Baliuag",
+      "Bocaue",
+      "Bulakan",
+      "Bustos",
+      "Calumpit",
+      "Doña Remedios Trinidad",
+      "Guiguinto",
+      "Hagonoy",
+      "Marilao",
+      "Norzagaray",
+      "Obando",
+      "Pandi",
+      "Paombong",
+      "Plaridel",
+      "Pulilan",
+      "San Ildefonso",
+      "San Miguel",
+      "San Rafael",
+      "Santa Maria"
+    ]
+  },
+  "BAN": {
+    "name": "Bataan",
+    "region": "III",
+    "capital": "Balanga",
+    "founded": "1754",
+    "area" : 1372.98,
+    "population" : {
+      "1990": 425803,
+      "1995": 491459,
+      "2000": 557659,
+      "2007": 662153,
+      "2010": 687482,
+      "2015": 760650
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Balanga",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Abucay",
+      "Bagac",
+      "Dinalupihan",
+      "Hermosa",
+      "Limay",
+      "Mariveles",
+      "Morong",
+      "Orani",
+      "Orion",
+      "Pilar",
+      "Samal"
+    ]
+  },
+  "RIZ": {
+    "name": "Rizal",
+    "region": "IV-A",
+    "capital": "Antipolo",
+    "founded": "1901-06-11",
+    "area" : 1191.94,
+    "population" : {
+      "1990": 977448,
+      "1995": 1312489,
+      "2000": 1707218,
+      "2007": 2284046,
+      "2010": 2484840,
+      "2015": 2884227
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Antipolo",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Angono",
+      "Baras",
+      "Binangonan",
+      "Cainta",
+      "Cardona",
+      "Jalajala",
+      "Morong",
+      "Pililla",
+      "Rodriguez",
+      "San Mateo",
+      "Tanay",
+      "Taytay",
+      "Teresa"
+    ]
+  },
+  "CAV": {
+    "name": "Cavite",
+    "region": "IV-A",
+    "capital": "Imus",
+    "founded": "1614-03-10",
+    "area" : 1426.06,
+    "population" : {
+      "1990": 1152534,
+      "1995": 1610324,
+      "2000": 2063161,
+      "2007": 2856765,
+      "2010": 3090691,
+      "2015": 3678301
+    },
+    "districts": 8,
+    "cities": [
+      {
+        "name": "Bacoor",
+        "type": "CC"
+      },
+      {
+        "name": "Cavite",
+        "type": "CC"
+      },
+      {
+        "name": "Dasmariñas",
+        "type": "CC"
+      },
+      {
+        "name": "General Trias",
+        "type": "CC"
+      },
+      {
+        "name": "Imus",
+        "type": "CC"
+      },
+      {
+        "name": "Tagaytay",
+        "type": "CC"
+      },
+      {
+        "name": "Trece Martires",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Alfonso",
+      "Amadeo",
+      "Carmona",
+      "General Emilio Aguinaldo",
+      "General Mariano Alvarez",
+      "Indang",
+      "Kawit",
+      "Magallanes",
+      "Maragondon",
+      "Mendez",
+      "Naic",
+      "Noveleta",
+      "Rosario",
+      "Silang",
+      "Tanza",
+      "Ternate"
+    ]
+  },
+  "LAG": {
+    "name": "Laguna",
+    "region": "IV-A",
+    "capital": "Santa Cruz",
+    "founded": "1571-07-28",
+    "area" : 1917.85,
+    "population" : {
+      "1990": 1370232,
+      "1995": 1631082,
+      "2000": 1965872,
+      "2007": 2473530,
+      "2010": 2669847,
+      "2015": 3035081
+    },
+    "districts": 7,
+    "cities": [
+      {
+        "name": "Biñan",
+        "type": "CC"
+      },
+      {
+        "name": "Cabuyao",
+        "type": "CC"
+      },
+      {
+        "name": "Calamba",
+        "type": "CC"
+      },
+      {
+        "name": "San Pedro",
+        "type": "CC"
+      },
+      {
+        "name": "Santa Cruz",
+        "type": "CC"
+      },
+      {
+        "name": "Santa Rosa",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Alaminos",
+      "Bay",
+      "Calauan",
+      "Cavinti",
+      "Famy",
+      "Kalayaan",
+      "Liliw",
+      "Los Baños",
+      "Luisiana",
+      "Lumban",
+      "Mabitac",
+      "Magdalena",
+      "Majayjay",
+      "Nagcarlan",
+      "Paete",
+      "Pagsanjan",
+      "Pakil",
+      "Pangil",
+      "Pila",
+      "Rizal",
+      "Santa Maria",
+      "Siniloan",
+      "Victoria"
+    ]
+  },
+  "BTG": {
+    "name": "Batangas",
+    "region": "IV-A",
+    "capital": "Batangas",
+    "founded": "1581-12-08",
+    "area" : 3119.75,
+    "population" : {
+      "1990": 1476783,
+      "1995": 1658567,
+      "2000": 1905348,
+      "2007": 2245869,
+      "2010": 2377395,
+      "2015": 2694335
+    },
+    "districts": 6,
+    "cities": [
+      {
+        "name": "Batangas",
+        "type": "CC"
+      },
+      {
+        "name": "Lipa",
+        "type": "CC"
+      },
+      {
+        "name": "Santo Tomas",
+        "type": "CC"
+      },
+      {
+        "name": "Tanauan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Agoncillo",
+      "Alitagtag",
+      "Balayan",
+      "Balete",
+      "Bauan",
+      "Calaca",
+      "Calatagan",
+      "Cuenca",
+      "Ibaan",
+      "Laurel",
+      "Lemery",
+      "Lian",
+      "Lobo",
+      "Mabini",
+      "Malvar",
+      "Mataasnakahoy",
+      "Nasugbu",
+      "Padre Garcia",
+      "Rosario",
+      "San Jose",
+      "San Juan",
+      "San Luis",
+      "San Nicolas",
+      "San Pascual",
+      "Santa Teresita",
+      "Taal",
+      "Talisay",
+      "Taysan",
+      "Tingloy",
+      "Tuy"
+    ]
+  },
+  "QUE": {
+    "name": "Quezon",
+    "region": "IV-A",
+    "capital": "Lucena",
+    "founded": "1591",
+    "area" : 9069.60,
+    "population" : {
+      "1990": 1372455,
+      "1995": 1537742,
+      "2000": 1679030,
+      "2007": 1882900,
+      "2010": 1987030,
+      "2015": 2122830
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Lucena",
+        "type": "HUC"
+      },
+      {
+        "name": "Tayabas",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Agdangan",
+      "Alabat",
+      "Atimonan",
+      "Buenavista",
+      "Burdeos",
+      "Calauag",
+      "Candelaria",
+      "Catanauan",
+      "Dolores",
+      "General Luna",
+      "General Nakar",
+      "Guinayangan",
+      "Gumaca",
+      "Infanta",
+      "Jomalig",
+      "Lopez",
+      "Lucban",
+      "Macalelon",
+      "Mauban",
+      "Mulanay",
+      "Padre Burgos",
+      "Pagbilao",
+      "Panukulan",
+      "Patnanungan",
+      "Perez",
+      "Pitogo",
+      "Quezon",
+      "Real",
+      "Sampaloc",
+      "San Andres",
+      "San Antonio",
+      "San Francisco",
+      "San Narciso",
+      "Sariaya",
+      "Tagkawayan",
+      "Tiaong",
+      "Unisan"
+    ]
+  },
+  "MAD": {
+    "name": "Marinduque",
+    "region": "IV-B",
+    "capital": "Boac",
+    "founded": "1920-02-21",
+    "area" : 952.58,
+    "population" : {
+      "1990": 185524,
+      "1995": 199910,
+      "2000": 217392,
+      "2007": 229636,
+      "2010": 227828,
+      "2015": 234521
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Boac",
+      "Buenavista",
+      "Gasan",
+      "Mogpog",
+      "Santa Cruz",
+      "Torrijos"
+    ]
+  },
+  "MDC": {
+    "name": "Occidental Mindoro",
+    "region": "IV-B",
+    "capital": "Mamburao",
+    "founded": "1950-11-15",
+    "area" : 5865.71,
+    "population" : {
+      "1990": 282593,
+      "1995": 339605,
+      "2000": 380250,
+      "2007": 421952,
+      "2010": 452971,
+      "2015": 487414
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Abra de Ilog",
+      "Calintaan",
+      "Looc",
+      "Lubang",
+      "Magsaysay",
+      "Mamburao",
+      "Paluan",
+      "Rizal",
+      "Sablayan",
+      "San Jose",
+      "Santa Cruz"
+    ]
+  },
+  "MDR": {
+    "name": "Oriental Mindoro",
+    "region": "IV-B",
+    "capital": "Calapan",
+    "founded": "1950-06-13",
+    "area" : 4238.38,
+    "population" : {
+      "1990": 550049,
+      "1995": 608616,
+      "2000": 681818,
+      "2007": 735769,
+      "2010": 785410,
+      "2015": 844059
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Calapan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Baco",
+      "Bansud",
+      "Bongabong",
+      "Bulalacao",
+      "Gloria",
+      "Mansalay",
+      "Naujan",
+      "Pinamalayan",
+      "Pola",
+      "Puerto Galera",
+      "Roxas",
+      "San Teodoro",
+      "Socorro",
+      "Victoria"
+    ]
+  },
+  "ROM": {
+    "name": "Romblon",
+    "region": "IV-B",
+    "capital": "Romblon",
+    "founded": "1901-03-16",
+    "area" : 1533.45,
+    "population" : {
+      "1990": 227621,
+      "1995": 244654,
+      "2000": 264357,
+      "2007": 279774,
+      "2010": 283930,
+      "2015": 292781
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Alcantara",
+      "Banton",
+      "Cajidiocan",
+      "Calatrava",
+      "Concepcion",
+      "Corcuera",
+      "Ferrol",
+      "Looc",
+      "Magdiwang",
+      "Odiongan",
+      "Romblon",
+      "San Agustin",
+      "San Andres",
+      "San Fernando",
+      "San Jose",
+      "Santa Fe",
+      "Santa Maria"
+    ]
+  },
+  "PLW": {
+    "name": "Palawan",
+    "region": "IV-B",
+    "capital": "Puerto Princesa",
+    "founded": "1818",
+    "area" : 17030.75,
+    "population" : {
+      "1990": 528287,
+      "1995": 640486,
+      "2000": 755412,
+      "2007": 892660,
+      "2010": 994340,
+      "2015": 1104585
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Puerto Princesa",
+        "type": "HUC"
+      }
+    ],
+    "municipalities": [
+      "Aborlan",
+      "Agutaya",
+      "Araceli",
+      "Balabac",
+      "Bataraza",
+      "Brooke's Point",
+      "Busuanga",
+      "Cagayancillo",
+      "Coron",
+      "Culion",
+      "Cuyo",
+      "Dumaran",
+      "El Nido",
+      "Kalayaan",
+      "Linapacan",
+      "Magsaysay",
+      "Narra",
+      "Quezon",
+      "Rizal",
+      "Roxas",
+      "San Vicente",
+      "Sofronio Española",
+      "Taytay"
+    ]
+  },
+  "CAN": {
+    "name": "Camarines Norte",
+    "region": "V",
+    "capital": "Daet",
+    "founded": "1829",
+    "area" : 2320.07,
+    "population" : {
+      "1990": 390982,
+      "1995": 439151,
+      "2000": 470654,
+      "2007": 513785,
+      "2010": 542915,
+      "2015": 583313
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": [
+      "Basud",
+      "Capalonga",
+      "Daet",
+      "Jose Panganiban",
+      "Labo",
+      "Mercedes",
+      "Paracale",
+      "San Lorenzo Ruiz",
+      "San Vicente",
+      "Santa Elena",
+      "Talisay",
+      "Vinzons"
+    ]
+  },
+  "CAS": {
+    "name": "Camarines Sur",
+    "region": "V",
+    "capital": "Pili",
+    "founded": "1919-03-19",
+    "area" : 5497.03,
+    "population" : {
+      "1990": 1305919,
+      "1995": 1432598,
+      "2000": 1551549,
+      "2007": 1693821,
+      "2010": 1822371,
+      "2015": 1952544
+    },
+    "districts": 5,
+    "cities": [
+      {
+        "name": "Iriga",
+        "type": "CC"
+      },
+      {
+        "name": "Naga",
+        "type": "ICC"
+      }
+    ],
+    "municipalities": [
+      "Baao",
+      "Balatan",
+      "Bato",
+      "Bombon",
+      "Buhi",
+      "Bula",
+      "Cabusao",
+      "Calabanga",
+      "Camaligan",
+      "Canaman",
+      "Caramoan",
+      "Del Gallego",
+      "Gainza",
+      "Garchitorena",
+      "Goa",
+      "Lagonoy",
+      "Libmanan",
+      "Lupi",
+      "Magarao",
+      "Milaor",
+      "Minalabac",
+      "Nabua",
+      "Ocampo",
+      "Pamplona",
+      "Pasacao",
+      "Pili",
+      "Presentacion",
+      "Ragay",
+      "Sagñay",
+      "San Fernando",
+      "San Jose",
+      "Sipocot",
+      "Siruma",
+      "Tigaon",
+      "Tinambac"
+    ]
+  },
+  "ALB": {
+    "name": "Albay",
+    "region": "V",
+    "capital": "Legazpi",
+    "founded": "1574-04-03",
+    "area" : 2575.77,
+    "population" : {
+      "1990": 903785,
+      "1995": 1005315,
+      "2000": 1090907,
+      "2007": 1190823,
+      "2010": 1233432,
+      "2015": 1314826
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Legazpi",
+        "type": "CC"
+      },
+      {
+        "name": "Ligao",
+        "type": "CC"
+      },
+      {
+        "name": "Tabaco",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Bacacay",
+      "Camalig",
+      "Daraga",
+      "Guinobatan",
+      "Jovellar",
+      "Libon",
+      "Malilipot",
+      "Malinao",
+      "Manito",
+      "Oas",
+      "Pio Duran",
+      "Polangui",
+      "Rapu-Rapu",
+      "Santo Domingo",
+      "Tiwi"
+    ]
+  },
+  "CAT": {
+    "name": "Catanduanes",
+    "region": "V",
+    "capital": "Virac",
+    "founded": "1945-09-26",
+    "area" : 1492.16,
+    "population" : {
+      "1990": 187000,
+      "1995": 202464,
+      "2000": 215356,
+      "2007": 232757,
+      "2010": 246300,
+      "2015": 260964
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Bagamanoc",
+      "Baras",
+      "Bato",
+      "Caramoran",
+      "Gigmoto",
+      "Pandan",
+      "Panganiban",
+      "San Andres",
+      "San Miguel",
+      "Viga",
+      "Virac"
+    ]
+  },
+  "SOR": {
+    "name": "Sorsogon",
+    "region": "V",
+    "capital": "Sorsogon",
+    "founded": "1894-10-17",
+    "area" : 2119.01,
+    "population" : {
+      "1990": 522960,
+      "1995": 591927,
+      "2000": 650535,
+      "2007": 709673,
+      "2010": 740743,
+      "2015": 792949
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Sorsogon",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Barcelona",
+      "Bulan",
+      "Bulusan",
+      "Casiguran",
+      "Castilla",
+      "Donsol",
+      "Gubat",
+      "Irosin",
+      "Juban",
+      "Magallanes",
+      "Matnog",
+      "Pilar",
+      "Prieto Diaz",
+      "Santa Magdalena"
+    ]
+  },
+  "MAS": {
+    "name": "Masbate",
+    "region": "V",
+    "capital": "Masbate",
+    "founded": "1917-03-10",
+    "area" : 4151.78,
+    "population" : {
+      "1990": 599355,
+      "1995": 653852,
+      "2000": 707668,
+      "2007": 768939,
+      "2010": 834650,
+      "2015": 892393
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Masbate",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Aroroy",
+      "Baleno",
+      "Balud",
+      "Batuan",
+      "Cataingan",
+      "Cawayan",
+      "Claveria",
+      "Dimasalang",
+      "Esperanza",
+      "Mandaon",
+      "Milagros",
+      "Mobo",
+      "Monreal",
+      "Palanas",
+      "Pio V. Corpuz",
+      "Placer",
+      "San Fernando",
+      "San Jacinto",
+      "San Pascual",
+      "Uson"
+    ]
+  },
+  "AKL": {
+    "name": "Aklan",
+    "region": "VI",
+    "capital": "Kalibo",
+    "founded": "1956-04-25",
+    "area" : 1821.42,
+    "population" : {
+      "1990": 380497,
+      "1995": 410539,
+      "2000": 451314,
+      "2007": 495122,
+      "2010": 535725,
+      "2015": 574823
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": [
+      "Altavas",
+      "Balete",
+      "Banga",
+      "Batan",
+      "Buruanga",
+      "Ibajay",
+      "Kalibo",
+      "Lezo",
+      "Libacao",
+      "Madalag",
+      "Makato",
+      "Malay",
+      "Malinao",
+      "Nabas",
+      "New Washington",
+      "Numancia",
+      "Tangalan"
+    ]
+  },
+  "CAP": {
+    "name": "Capiz",
+    "region": "VI",
+    "capital": "Roxas",
+    "founded": "1901-04-15",
+    "area" : 2594.64,
+    "population" : {
+      "1990": 584091,
+      "1995": 624469,
+      "2000": 654156,
+      "2007": 701664,
+      "2010": 719685,
+      "2015": 761384
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Roxas",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Cuartero",
+      "Dao",
+      "Dumalag",
+      "Dumarao",
+      "Ivisan",
+      "Jamindan",
+      "Maayon",
+      "Mambusao",
+      "Panay",
+      "Panitan",
+      "Pilar",
+      "Pontevedra",
+      "President Roxas",
+      "Sapian",
+      "Sigma",
+      "Tapaz"
+    ]
+  },
+  "ANT": {
+    "name": "Antique",
+    "region": "VI",
+    "capital": "San Jose de Buenavista",
+    "founded": "1780",
+    "area" : 2729.17,
+    "population" : {
+      "1990": 406361,
+      "1995": 431713,
+      "2000": 472822,
+      "2007": 515265,
+      "2010": 546031,
+      "2015": 582012
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Anini-y",
+      "Barbaza",
+      "Belison",
+      "Bugasong",
+      "Caluya",
+      "Culasi",
+      "Hamtic",
+      "Laua-an",
+      "Libertad",
+      "Pandan",
+      "Patnongon",
+      "San Jose de Buenavista",
+      "San Remigio",
+      "Sebaste",
+      "Sibalom",
+      "Tibiao",
+      "Tobias Fornier",
+      "Valderrama"
+    ]
+  },
+  "ILI": {
+    "name": "Iloilo",
+    "region": "VI",
+    "capital": "Iloilo",
+    "founded": "1566",
+    "area" : 5079.17,
+    "population" : {
+      "1990": 1647486,
+      "1995": 1749561,
+      "2000": 1925573,
+      "2007": 2110588,
+      "2010": 2230195,
+      "2015": 2384415
+    },
+    "districts": 6,
+    "cities": [
+      {
+        "name": "Iloilo",
+        "type": "HUC"
+      },
+      {
+        "name": "Passi",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [ 
+      "Ajuy",
+      "Alimodian",
+      "Anilao",
+      "Badiangan",
+      "Balasan",
+      "Banate",
+      "Barotac Nuevo",
+      "Barotac Viejo",
+      "Batad",
+      "Bingawan",
+      "Cabatuan",
+      "Calinog",
+      "Carles",
+      "Concepcion",
+      "Dingle",
+      "Dueñas",
+      "Dumangas",
+      "Estancia",
+      "Guimbal",
+      "Igbaras",
+      "Janiuay",
+      "Lambunao",
+      "Leganes",
+      "Lemery",
+      "Leon",
+      "Maasin",
+      "Miagao",
+      "Mina",
+      "New Lucena",
+      "Oton",
+      "Pavia",
+      "Pototan",
+      "San Dionisio",
+      "San Enrique",
+      "San Joaquin",
+      "San Miguel",
+      "San Rafael",
+      "Santa Barbara",
+      "Sara",
+      "Tigbauan",
+      "Tubungan",
+      "Zarraga"
+    ]
+  },
+  "GUI": {
+    "name": "Guimaras",
+    "region": "VI",
+    "capital": "Jordan",
+    "founded": "1581-05-22",
+    "area" : 604.57,
+    "population" : {
+      "1990": 117990,
+      "1995": 126470,
+      "2000": 141450,
+      "2007": 151238,
+      "2010": 162943,
+      "2015": 174613
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Buenavista",
+      "Jordan",
+      "Nueva Valencia",
+      "San Lorenzo",
+      "Sibunag"
+    ]
+  },
+  "NEC": {
+    "name": "Negros Occidental",
+    "region": "VI",
+    "capital": "Bacolod",
+    "founded": "1890-01-01",
+    "area" : 7802.54,
+    "population" : {
+      "1990": 2256908,
+      "1995": 2434186,
+      "2000": 2565723,
+      "2007": 2869766,
+      "2010": 2907859,
+      "2015": 3059136
+    },
+    "districts": 7,
+    "cities": [
+      {
+        "name": "Bacolod",
+        "type": "HUC"
+      },
+      {
+        "name": "Bago",
+        "type": "CC"
+      },
+      {
+        "name": "Cadiz",
+        "type": "CC"
+      },
+      {
+        "name": "Escalante",
+        "type": "CC"
+      },
+      {
+        "name": "Himamaylan",
+        "type": "CC"
+      },
+      {
+        "name": "Kabankalan",
+        "type": "CC"
+      },
+      {
+        "name": "La Carlota",
+        "type": "CC"
+      },
+      {
+        "name": "Sagay",
+        "type": "CC"
+      },
+      {
+        "name": "San Carlos",
+        "type": "CC"
+      },
+      {
+        "name": "Silay",
+        "type": "CC"
+      },
+      {
+        "name": "Sipalay",
+        "type": "CC"
+      },
+      {
+        "name": "Talisay",
+        "type": "CC"
+      },
+      {
+        "name": "Victorias",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Binalbagan",
+      "Calatrava",
+      "Candoni",
+      "Cauayan",
+      "Enrique B. Magalona",
+      "Hinigaran",
+      "Hinoba-an",
+      "Ilog",
+      "Isabela",
+      "La Castellana",
+      "Manapla",
+      "Moises Padilla",
+      "Murcia",
+      "Pontevedra",
+      "Pulupandan",
+      "Salvador Benedicto",
+      "San Enrique",
+      "Toboso",
+      "Valladolid"
+    ]
+  },
+  "NER": {
+    "name": "Negros Oriental",
+    "region": "VII",
+    "capital": "Dumaguete",
+    "founded": "1890-01-01",
+    "area" : 5385.53,
+    "population" : {
+      "1990": 925272,
+      "1995": 1025247,
+      "2000": 1130088,
+      "2007": 1231904,
+      "2010": 1286666,
+      "2015": 1354995
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Bais",
+        "type": "CC"
+      },
+      {
+        "name": "Bayawan",
+        "type": "CC"
+      },
+      {
+        "name": "Canlaon",
+        "type": "CC"
+      },
+      {
+        "name": "Dumaguete",
+        "type": "CC"
+      },
+      {
+        "name": "Guihulngan",
+        "type": "CC"
+      },
+      {
+        "name": "Tanjay",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Amlan",
+      "Ayungon",
+      "Bacong",
+      "Basay",
+      "Bindoy",
+      "Dauin",
+      "Jimalalud",
+      "La Libertad",
+      "Mabinay",
+      "Manjuyod",
+      "Pamplona",
+      "San Jose",
+      "Santa Catalina",
+      "Siaton",
+      "Sibulan",
+      "Tayasan",
+      "Valencia",
+      "Vallehermoso",
+      "Zamboanguita"
+    ]
+  },
+  "CEB": {
+    "name": "Cebu",
+    "region": "VII",
+    "capital": "Cebu",
+    "founded": "1569-08-06",
+    "area" : 5342,
+    "population" : {
+      "1990": 2640574,
+      "1995": 2921145,
+      "2000": 3356137,
+      "2007": 3850989,
+      "2010": 4167320,
+      "2015": 4632359
+    },
+    "districts": 12,
+    "cities": [
+      {
+        "name": "Bogo",
+        "type": "CC" 
+      },
+      {
+        "name": "Carcar",
+        "type": "CC" 
+      },
+      {
+        "name": "Cebu",
+        "type": "HUC" 
+      },
+      {
+        "name": "Danao",
+        "type": "CC" 
+      },
+      {
+        "name": "Lapu-Lapu",
+        "type": "HUC" 
+      },
+      {
+        "name": "Mandaue",
+        "type": "HUC" 
+      },
+      {
+        "name": "Naga",
+        "type": "CC" 
+      },
+      {
+        "name": "Talisay",
+        "type": "CC" 
+      },
+      {
+        "name": "Toledo",
+        "type": "CC" 
+      }
+    ],
+    "municipalities": [
+      "Alcantara",
+      "Alcoy",
+      "Alegria",
+      "Aloguinsan",
+      "Argao",
+      "Asturias",
+      "Badian",
+      "Balamban",
+      "Bantayan",
+      "Barili",
+      "Boljoon",
+      "Borbon",
+      "Carmen",
+      "Catmon",
+      "Compostela",
+      "Consolacion",
+      "Cordoba",
+      "Daanbantayan",
+      "Dalaguete",
+      "Dumanjug",
+      "Ginatilan",
+      "Liloan",
+      "Madridejos",
+      "Malabuyoc",
+      "Medellin",
+      "Minglanilla",
+      "Moalboal",
+      "Oslob",
+      "Pilar",
+      "Pinamungajan",
+      "Poro",
+      "Ronda",
+      "Samboan",
+      "San Fernando",
+      "San Francisco",
+      "San Remigio",
+      "Santa Fe",
+      "Santander",
+      "Sibonga",
+      "Sogod",
+      "Tabogon",
+      "Tabuelan",
+      "Tuburan",
+      "Tudela"
+    ]
+  },
+  "BOH": {
+    "name": "Bohol",
+    "region": "VII",
+    "capital": "Tagbilaran",
+    "founded": "1854-07-22",
+    "area" : 4820.95,
+    "population" : {
+      "1990": 948403,
+      "1995": 994440,
+      "2000": 1139130,
+      "2007": 1230110,
+      "2010": 1255128,
+      "2015": 1313560
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Tagbilaran",
+        "type": "CC" 
+      }
+    ],
+    "municipalities": [ 
+      "Alburquerque",
+      "Alicia",
+      "Anda",
+      "Antequera",
+      "Baclayon",
+      "Balilihan",
+      "Batuan",
+      "Bien Unido",
+      "Bilar",
+      "Buenavista",
+      "Calape",
+      "Candijay",
+      "Carmen",
+      "Catigbian",
+      "Clarin",
+      "Corella",
+      "Cortes",
+      "Dagohoy",
+      "Danao",
+      "Dauis",
+      "Dimiao",
+      "Duero",
+      "Garcia Hernandez",
+      "Getafe",
+      "Guindulman",
+      "Inabanga",
+      "Jagna",
+      "Lila",
+      "Loay",
+      "Loboc",
+      "Loon",
+      "Mabini",
+      "Maribojoc",
+      "Panglao",
+      "Pilar",
+      "President Carlos P. Garcia",
+      "Sagbayan",
+      "San Isidro",
+      "San Miguel",
+      "Sevilla",
+      "Sierra Bullones",
+      "Sikatuna",
+      "Talibon",
+      "Trinidad",
+      "Tubigon",
+      "Ubay",
+      "Valencia"
+    ]
+  },
+  "SIG": {
+    "name": "Siquijor",
+    "region": "VII",
+    "capital": "Siquijor",
+    "founded": "1971-09-17",
+    "area" : 337.49,
+    "population" : {
+      "1990": 73932,
+      "1995": 73756,
+      "2000": 81598,
+      "2007": 87695,
+      "2010": 91066,
+      "2015": 95984
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Enrique Villanueva",
+      "Larena",
+      "Lazi",
+      "Maria",
+      "San Juan",
+      "Siquijor"
+    ]
+  },
+  "BIL": {
+    "name": "Biliran",
+    "region": "VIII",
+    "capital": "Naval",
+    "founded": "1992-05-11",
+    "area" : 536.01,
+    "population" : {
+      "1990": 118012,
+      "1995": 132209,
+      "2000": 140274,
+      "2007": 150031,
+      "2010": 161760,
+      "2015": 171612
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Almeria",
+      "Biliran",
+      "Cabucgayan",
+      "Caibiran",
+      "Culaba",
+      "Kawayan",
+      "Maripipi",
+      "Naval"
+    ]
+  },
+  "NSA": {
+    "name": "Northern Samar",
+    "region": "VIII",
+    "capital": "Catarman",
+    "founded": "1965-06-19",
+    "area" : 3692.93,
+    "population" : {
+      "1990": 383654,
+      "1995": 454195,
+      "2000": 500639,
+      "2007": 549759,
+      "2010": 589013,
+      "2015": 632379
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": [
+      "Allen",
+      "Biri",
+      "Bobon",
+      "Capul",
+      "Catarman",
+      "Catubig",
+      "Gamay",
+      "Laoang",
+      "Lapinig",
+      "Las Navas",
+      "Lavezares",
+      "Lope de Vega",
+      "Mapanas",
+      "Mondragon",
+      "Palapag",
+      "Pambujan",
+      "Rosario",
+      "San Antonio",
+      "San Isidro",
+      "San Jose",
+      "San Roque",
+      "San Vicente",
+      "Silvino Lobos",
+      "Victoria"
+    ]
+  },
+  "WSA": {
+    "name": "Samar",
+    "region": "VIII",
+    "capital": "Catbalogan",
+    "founded": "1965-11-19",
+    "area" : 6048.03,
+    "population" : {
+      "1990": 533733,
+      "1995": 589373,
+      "2000": 641124,
+      "2007": 695149,
+      "2010": 733377,
+      "2015": 780478
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Calbayog",
+        "type": "CC"
+      },
+      {
+        "name": "Catbalogan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Almagro",
+      "Basey",
+      "Calbiga",
+      "Daram",
+      "Gandara",
+      "Hinabangan",
+      "Jiabong",
+      "Marabut",
+      "Matuguinao",
+      "Motiong",
+      "Pagsanghan",
+      "Paranas",
+      "Pinabacdao",
+      "San Jorge",
+      "San Jose de Buan",
+      "San Sebastian",
+      "Santa Margarita",
+      "Santa Rita",
+      "Santo Niño",
+      "Tagapul-an",
+      "Talalora",
+      "Tarangnan",
+      "Villareal",
+      "Zumarraga"
+    ]
+  },
+  "EAS": {
+    "name": "Eastern Samar",
+    "region": "VIII",
+    "capital": "Borongan",
+    "founded": "1965-11-19",
+    "area" : 4660.47,
+    "population" : {
+      "1990": 329335,
+      "1995": 362324,
+      "2000": 375822,
+      "2007": 405144,
+      "2010": 428877,
+      "2015": 467160
+    },
+    "districts": 1,
+    "cities": [
+      {
+        "name": "Borongan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Arteche",
+      "Balangiga",
+      "Balangkayan",
+      "Can-avid",
+      "Dolores",
+      "General MacArthur",
+      "Giporlos",
+      "Guiuan",
+      "Hernani",
+      "Jipapad",
+      "Lawaan",
+      "Llorente",
+      "Maslog",
+      "Maydolong",
+      "Mercedes",
+      "Oras",
+      "Quinapondan",
+      "Salcedo",
+      "San Julian",
+      "San Policarpo",
+      "Sulat",
+      "Taft"
+    ]
+  },
+  "LEY": {
+    "name": "Leyte",
+    "region": "VIII",
+    "capital": "Tacloban",
+    "founded": "1735",
+    "area" : 6515.05,
+    "population" : {
+      "1990": 1367816,
+      "1995": 1511251,
+      "2000": 1592336,
+      "2007": 1724240,
+      "2010": 1789158,
+      "2015": 1966768
+    },
+    "districts": 6,
+    "cities": [
+      {
+        "name": "Baybay",
+        "type": "CC"
+      },
+      {
+        "name": "Ormoc",
+        "type": "ICC"
+      },
+      {
+        "name": "Tacloban",
+        "type": "HUC"
+      }
+    ],
+    "municipalities": [ 
+      "Abuyog",
+      "Alangalang",
+      "Albuera",
+      "Babatngon",
+      "Barugo",
+      "Bato",
+      "Burauen",
+      "Calubian",
+      "Capoocan",
+      "Carigara",
+      "Dagami",
+      "Dulag",
+      "Hilongos",
+      "Hindang",
+      "Inopacan",
+      "Isabel",
+      "Jaro",
+      "Javier",
+      "Julita",
+      "Kananga",
+      "La Paz",
+      "Leyte",
+      "MacArthur",
+      "Mahaplag",
+      "Matag-ob",
+      "Matalom",
+      "Mayorga",
+      "Merida",
+      "Palo",
+      "Palompon",
+      "Pastrana",
+      "San Isidro",
+      "San Miguel",
+      "Santa Fe",
+      "Tabango",
+      "Tabontabon",
+      "Tanauan",
+      "Tolosa",
+      "Tunga",
+      "Villaba"
+    ]
+  },
+  "SLE": {
+    "name": "Southern Leyte",
+    "region": "VIII",
+    "capital": "Maasin",
+    "founded": "1959-05-22",
+    "area" : 1798.61,
+    "population" : {
+      "1990": 321940,
+      "1995": 317565,
+      "2000": 360160,
+      "2007": 390847,
+      "2010": 399137,
+      "2015": 421750
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Maasin",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Anahawan",
+      "Bontoc",
+      "Hinunangan",
+      "Hinundayan",
+      "Libagon",
+      "Liloan",
+      "Limasawa",
+      "Macrohon",
+      "Malitbog",
+      "Padre Burgos",
+      "Pintuyan",
+      "Saint Bernard",
+      "San Francisco",
+      "San Juan",
+      "San Ricardo",
+      "Silago",
+      "Sogod",
+      "Tomas Oppus"
+    ]
+  },
+  "ZAN": {
+    "name": "Zamboanga del Norte",
+    "region": "IX",
+    "capital": "Dipolog",
+    "founded": "1952-06-06",
+    "area" : 7301,
+    "population" : {
+      "1990": 676021,
+      "1995": 770697,
+      "2000": 823130,
+      "2007": 907238,
+      "2010": 957997,
+      "2015": 1011393
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Dapitan",
+        "type": "CC"
+      },
+      {
+        "name": "Dipolog",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Baliguian",
+      "Godod",
+      "Gutalac",
+      "Jose Dalman",
+      "Kalawit",
+      "Katipunan",
+      "La Libertad",
+      "Labason",
+      "Leon B. Postigo",
+      "Liloy",
+      "Manukan",
+      "Mutia",
+      "Piñan",
+      "Polanco",
+      "President Manuel A. Roxas",
+      "Rizal",
+      "Salug",
+      "Sergio Osmeña Sr.",
+      "Siayan",
+      "Sibuco",
+      "Sibutad",
+      "Sindangan",
+      "Siocon",
+      "Sirawai",
+      "Tampilisan"
+    ]
+  },
+  "ZAS": {
+    "name": "Zamboanga del Sur",
+    "region": "IX",
+    "capital": "Pagadian",
+    "founded": "1952-06-06",
+    "area" : 5914.16,
+    "population" : {
+      "1990": 1138086,
+      "1995": 1278057,
+      "2000": 1438011,
+      "2007": 1688685,
+      "2010": 1766814,
+      "2015": 1872473
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Pagadian",
+        "type": "CC"
+      },
+      {
+        "name": "Zamboanga",
+        "type": "HUC"
+      }
+    ],
+    "municipalities": [
+      "Aurora",
+      "Bayog",
+      "Dimataling",
+      "Dinas",
+      "Dumalinao",
+      "Dumingag",
+      "Guipos",
+      "Josefina",
+      "Kumalarang",
+      "Labangan",
+      "Lakewood",
+      "Lapuyan",
+      "Mahayag",
+      "Margosatubig",
+      "Midsalip",
+      "Molave",
+      "Pitogo",
+      "Ramon Magsaysay",
+      "San Miguel",
+      "San Pablo",
+      "Sominot",
+      "Tabina",
+      "Tambulig",
+      "Tigbao",
+      "Tukuran",
+      "Vincenzo A. Sagun"
+    ]
+  },
+  "ZSI": {
+    "name": "Zamboanga Sibugay",
+    "region": "IX",
+    "capital": "Ipil",
+    "founded": "2001-02-22",
+    "area" : 3607.75,
+    "population" : {
+      "1990": 407038,
+      "1995": 450340,
+      "2000": 497239,
+      "2007": 546186,
+      "2010": 584685,
+      "2015": 633129
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": [
+      "Alicia",
+      "Buug",
+      "Diplahan",
+      "Imelda",
+      "Ipil",
+      "Kabasalan",
+      "Mabuhay",
+      "Malangas",
+      "Naga",
+      "Olutanga",
+      "Payao",
+      "Roseller Lim",
+      "Siay",
+      "Talusan",
+      "Titay",
+      "Tungawan"
+    ]
+  },
+  "MSC": {
+    "name": "Misamis Occidental",
+    "region": "X",
+    "capital": "Oroquieta",
+    "founded": "1929-11-02",
+    "area" : 2055.22,
+    "population" : {
+      "1990": 424365,
+      "1995": 458965,
+      "2000": 486723,
+      "2007": 531680,
+      "2010": 567642,
+      "2015": 602126
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Oroquieta",
+        "type": "CC"
+      },
+      {
+        "name": "Ozamiz",
+        "type": "CC"
+      },
+      {
+        "name": "Tangub",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Aloran",
+      "Baliangao",
+      "Bonifacio",
+      "Calamba",
+      "Clarin",
+      "Concepcion",
+      "Don Victoriano Chiongbian",
+      "Jimenez",
+      "Lopez Jaena",
+      "Panaon",
+      "Plaridel",
+      "Sapang Dalaga",
+      "Sinacaban",
+      "Tudela"
+    ]
+  },
+  "LAN": {
+    "name": "Lanao del Norte",
+    "region": "X",
+    "capital": "Tubod",
+    "founded": "1959-05-22",
+    "area" : 4159.94,
+    "population" : {
+      "1990": 387524,
+      "1995": 440783,
+      "2000": 473062,
+      "2007": 538283,
+      "2010": 607917,
+      "2015": 676395
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Iligan",
+        "type": "HUC"
+      },
+      {
+        "name": "Tubod",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Bacolod",
+      "Baloi",
+      "Baroy",
+      "Kapatagan",
+      "Kauswagan",
+      "Kolambugan",
+      "Lala",
+      "Linamon",
+      "Magsaysay",
+      "Maigo",
+      "Matungao",
+      "Munai",
+      "Nunungan",
+      "Pantao Ragat",
+      "Pantar",
+      "Poona Piagapo",
+      "Salvador",
+      "Sapad",
+      "Sultan Naga Dimaporo",
+      "Tagoloan",
+      "Tangcal"
+    ]
+  },
+  "MSR": {
+    "name": "Misamis Oriental",
+    "region": "X",
+    "capital": "Cagayan de Oro",
+    "founded": "1939",
+    "area" : 3544.32,
+    "population" : {
+      "1990": 865051,
+      "1995": 1015865,
+      "2000": 1126215,
+      "2007": 1302851,
+      "2010": 1415944,
+      "2015": 1564459
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Cagayan de Oro",
+        "type": "HUC"
+      },
+      {
+        "name": "El Salvador",
+        "type": "CC"
+      },
+      {
+        "name": "Gingoog",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Alubijid",
+      "Balingasag",
+      "Balingoan",
+      "Binuangan",
+      "Claveria",
+      "Gitagum",
+      "Initao",
+      "Jasaan",
+      "Kinoguitan",
+      "Lagonglong",
+      "Laguindingan",
+      "Libertad",
+      "Lugait",
+      "Magsaysay",
+      "Manticao",
+      "Medina",
+      "Naawan",
+      "Opol",
+      "Salay",
+      "Sugbongcogon",
+      "Tagoloan",
+      "Talisayan",
+      "Villanueva"
+    ]
+  },
+  "CAM": {
+    "name": "Camiguin",
+    "region": "X",
+    "capital": "Mambajao",
+    "founded": "1966-06-18",
+    "area" : 237.95,
+    "population" : {
+      "1990": 64247,
+      "1995": 68039,
+      "2000": 74232,
+      "2007": 81293,
+      "2010": 83807,
+      "2015": 88478
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Catarman",
+      "Guinsiliban",
+      "Mahinog",
+      "Mambajao",
+      "Sagay"
+    ]
+  },
+  "BUK": {
+    "name": "Bukidnon",
+    "region": "X",
+    "capital": "Malaybalay",
+    "founded": "1914-09-01",
+    "area" : 10498.59,
+    "population" : {
+      "1990": 843891,
+      "1995": 940403,
+      "2000": 1060415,
+      "2007": 1190284,
+      "2010": 1299192,
+      "2015": 1415226
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Malaybalay",
+        "type": "CC"
+      },
+      {
+        "name": "Valencia",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Baungon",
+      "Cabanglasan",
+      "Damulog",
+      "Dangcagan",
+      "Don Carlos",
+      "Impasugong",
+      "Kadingilan",
+      "Kalilangan",
+      "Kibawe",
+      "Kitaotao",
+      "Lantapan",
+      "Libona",
+      "Malitbog",
+      "Manolo Fortich",
+      "Maramag",
+      "Pangantucan",
+      "Quezon",
+      "San Fernando",
+      "Sumilao",
+      "Talakag"
+    ]
+  },
+  "DAO": {
+    "name": "Davao Oriental",
+    "region": "XI",
+    "capital": "Mati",
+    "founded": "1967-07-01",
+    "area" : 5679.64,
+    "population" : {
+      "1990": 394697,
+      "1995": 413472,
+      "2000": 446191,
+      "2007": 486104,
+      "2010": 517618,
+      "2015": 558958
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Mati",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Baganga",
+      "Banaybanay",
+      "Boston",
+      "Caraga",
+      "Cateel",
+      "Governor Generoso",
+      "Lupon",
+      "Manay",
+      "San Isidro",
+      "Tarragona"
+    ]
+  },
+  "COM": {
+    "name": "Davao de Oro",
+    "region": "XI",
+    "capital": "Nabunturan",
+    "founded": "1998-03-08",
+    "area" : 4479.77,
+    "population" : {
+      "1990": 466286,
+      "1995": 520110,
+      "2000": 580244,
+      "2007": 637366,
+      "2010": 678195,
+      "2015": 736107
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": [
+      "Compostela",
+      "Laak",
+      "Mabini",
+      "Maco",
+      "Maragusan",
+      "Mawab",
+      "Monkayo",
+      "Montevista",
+      "Nabunturan",
+      "New Bataan",
+      "Pantukan"
+    ]
+  },
+  "DAV": {
+    "name": "Davao del Norte",
+    "region": "XI",
+    "capital": "Tagum",
+    "founded": "1967-07-01",
+    "area" : 3426.97,
+    "population" : {
+      "1990": 590015,
+      "1995": 671333,
+      "2000": 743811,
+      "2007": 847440,
+      "2010": 945764,
+      "2015": 1016332
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Panabo",
+        "type": "CC"
+      },
+      {
+        "name": "Samal",
+        "type": "CC"
+      },
+      {
+        "name": "Tagum",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Asuncion",
+      "Braulio E. Dujali",
+      "Carmen",
+      "Kapalong",
+      "New Corella",
+      "San Isidro",
+      "Santo Tomas",
+      "Talaingod"
+    ]
+  },
+  "DAS": {
+    "name": "Davao del Sur",
+    "region": "XI",
+    "capital": "Digos",
+    "founded": "1967-05-08",
+    "area" : 4607.59,
+    "population" : {
+      "1990": 1273219,
+      "1995": 1464084,
+      "2000": 1651405,
+      "2007": 1915989,
+      "2010": 2024206,
+      "2015": 2265579
+    },
+    "districts": 4,
+    "cities": [
+      {
+        "name": "Davao",
+        "type": "HUC"
+      },
+      {
+        "name": "Digos",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Bansalan",
+      "Hagonoy",
+      "Kiblawan",
+      "Magsaysay",
+      "Malalag",
+      "Matanao",
+      "Padada",
+      "Santa Cruz",
+      "Sulop"
+    ]
+  },
+  "DVO": {
+    "name": "Davao Occidental",
+    "region": "XI",
+    "capital": "Malita",
+    "founded": "2013-10-28",
+    "area" : 2163.45,
+    "population" : {
+      "1990": 209429,
+      "1995": 219825,
+      "2000": 254512,
+      "2007": 272570,
+      "2010": 293780,
+      "2015": 316342
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Don Marcelino",
+      "Jose Abad Santos",
+      "Malita",
+      "Santa Maria",
+      "Sarangani"
+    ]
+  },
+  "NCO": {
+    "name": "Cotabato",
+    "region": "XII",
+    "capital": "Kidapawan",
+    "founded": "1914-09-01",
+    "area" : 9008.9,
+    "population" : {
+      "1990": 763995,
+      "1995": 862666,
+      "2000": 958643,
+      "2007": 1121974,
+      "2010": 1226508,
+      "2015": 1379747
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "Kidapawan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Alamada",
+      "Aleosan",
+      "Antipas",
+      "Arakan",
+      "Banisilan",
+      "Carmen",
+      "Kabacan",
+      "Libungan",
+      "M'lang",
+      "Magpet",
+      "Makilala",
+      "Matalam",
+      "Midsayap",
+      "Pigcawayan",
+      "Pikit",
+      "President Roxas",
+      "Tulunan"
+    ]
+  },
+  "SCO": {
+    "name": "South Cotabato",
+    "region": "XII",
+    "capital": "Koronadal",
+    "founded": "1966-07-18",
+    "area" : 4428.81,
+    "population" : {
+      "1990": 789847,
+      "1995": 948328,
+      "2000": 1102550,
+      "2007": 1296796,
+      "2010": 1365286,
+      "2015": 1509735
+    },
+    "districts": 3,
+    "cities": [
+      {
+        "name": "General Santos",
+        "type": "HUC"
+      },
+      {
+        "name": "Koronadal",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Banga",
+      "Lake Sebu",
+      "Norala",
+      "Polomolok",
+      "Santo Niño",
+      "Surallah",
+      "T'boli",
+      "Tampakan",
+      "Tantangan",
+      "Tupi"
+    ]
+  },
+  "SUK": {
+    "name": "Sultan Kudarat",
+    "region": "XII",
+    "capital": "Isulan",
+    "founded": "1973-11-22",
+    "area" : 5298.34,
+    "population" : {
+      "1990": 435905,
+      "1995": 522187,
+      "2000": 586505,
+      "2007": 675644,
+      "2010": 747087,
+      "2015": 812095
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Tacurong",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Bagumbayan",
+      "Columbio",
+      "Esperanza",
+      "Isulan",
+      "Kalamansig",
+      "Lambayong",
+      "Lebak",
+      "Lutayan",
+      "Palimbang",
+      "President Quirino",
+      "Senator Ninoy Aquino"
+    ]
+  },
+  "SAR": {
+    "name": "Sarangani",
+    "region": "XII",
+    "capital": "Alabel",
+    "founded": "1992-11-28",
+    "area" : 3601.25,
+    "population" : {
+      "1990": 283141,
+      "1995": 367006,
+      "2000": 410622,
+      "2007": 475514,
+      "2010": 498904,
+      "2015": 544261
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Alabel",
+      "Glan",
+      "Kiamba",
+      "Maasim",
+      "Maitum",
+      "Malapatan",
+      "Malungon"
+    ]
+  },
+  "DIN": {
+    "name": "Dinagat Islands",
+    "region": "XIII",
+    "capital": "San Jose",
+    "founded": "2006-12-02",
+    "area" : 1036.34,
+    "population" : {
+      "1990": 98865,
+      "1995": 100537,
+      "2000": 106951,
+      "2007": 120813,
+      "2010": 126803,
+      "2015": 127152
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Basilisa",
+      "Cagdianao",
+      "Dinagat",
+      "Libjo",
+      "Loreto",
+      "San Jose",
+      "Tubajon"
+    ]
+  },
+  "SUN": {
+    "name": "Surigao del Norte",
+    "region": "XIII",
+    "capital": "Surigao",
+    "founded": "1960-06-19",
+    "area" : 1972.93,
+    "population" : {
+      "1990": 327113,
+      "1995": 340043,
+      "2000": 374465,
+      "2007": 409468,
+      "2010": 442588,
+      "2015": 485088
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Surigao",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Alegria",
+      "Bacuag",
+      "Burgos",
+      "Claver",
+      "Dapa",
+      "Del Carmen",
+      "General Luna",
+      "Gigaquit",
+      "Mainit",
+      "Malimono",
+      "Pilar",
+      "Placer",
+      "San Benito",
+      "San Francisco",
+      "San Isidro",
+      "Santa Monica",
+      "Sison",
+      "Socorro",
+      "Tagana-an",
+      "Tubod"
+    ]
+  },
+  "AGN": {
+    "name": "Agusan del Norte",
+    "region": "XIII",
+    "capital": "Cabadbaran",
+    "founded": "1967-06-17",
+    "area" : 3546.86,
+    "population" : {
+      "1990": 465458,
+      "1995": 514485,
+      "2000": 552849,
+      "2007": 612405,
+      "2010": 642196,
+      "2015": 691566
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Butuan",
+        "type": "HUC"
+      },
+      {
+        "name": "Cabadbaran",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Buenavista",
+      "Carmen",
+      "Jabonga",
+      "Kitcharao",
+      "Las Nieves",
+      "Magallanes",
+      "Nasipit",
+      "Remedios T. Romualdez",
+      "Santiago",
+      "Tubay"
+    ]
+  },
+  "SUR": {
+    "name": "Surigao del Sur",
+    "region": "XIII",
+    "capital": "Tandag",
+    "founded": "1960-06-19",
+    "area" : 4932.7,
+    "population" : {
+      "1990": 452098,
+      "1995": 471263,
+      "2000": 501808,
+      "2007": 541347,
+      "2010": 561219,
+      "2015": 592250
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Bislig",
+        "type": "CC"
+      },
+      {
+        "name": "Tandag",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Barobo",
+      "Bayabas",
+      "Cagwait",
+      "Cantilan",
+      "Carmen",
+      "Carrascal",
+      "Cortes",
+      "Hinatuan",
+      "Lanuza",
+      "Lianga",
+      "Lingig",
+      "Madrid",
+      "Marihatag",
+      "San Agustin",
+      "San Miguel",
+      "Tagbina",
+      "Tago"
+    ]
+  },
+  "AGS": {
+    "name": "Agusan del Sur",
+    "region": "XIII",
+    "capital": "Prosperidad",
+    "founded": "1967-06-17",
+    "area" : 9989.52,
+    "population" : {
+      "1990": 420763,
+      "1995": 514736,
+      "2000": 559294,
+      "2007": 609447,
+      "2010": 656418,
+      "2015": 700653
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Bayugan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Bunawan",
+      "Esperanza",
+      "La Paz",
+      "Loreto",
+      "Prosperidad",
+      "Rosario",
+      "San Francisco",
+      "San Luis",
+      "Santa Josefa",
+      "Sibagat",
+      "Talacogon",
+      "Trento",
+      "Veruela"
+    ]
+  },
+  "LAS": {
+    "name": "Lanao del Sur",
+    "region": "BARMM",
+    "capital": "Marawi",
+    "founded": "1959",
+    "area" : 3872.89,
+    "population" : {
+      "1990": 599982,
+      "1995": 686193,
+      "2000": 800162,
+      "2007": 1138544,
+      "2010": 933260,
+      "2015": 1045429
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Marawi",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Bacolod-Kalawi",
+      "Balabagan",
+      "Balindong",
+      "Bayang",
+      "Binidayan",
+      "Buadiposo-Buntong",
+      "Bubong",
+      "Bumbaran",
+      "Butig",
+      "Calanogas",
+      "Ditsaan-Ramain",
+      "Ganassi",
+      "Kapai",
+      "Kapatagan",
+      "Lumba-Bayabao",
+      "Lumbaca-Unayan",
+      "Lumbatan",
+      "Lumbayanague",
+      "Madalum",
+      "Madamba",
+      "Maguing",
+      "Malabang",
+      "Marantao",
+      "Marogong",
+      "Masiu",
+      "Mulondo",
+      "Pagayawan",
+      "Piagapo",
+      "Poona Bayabao",
+      "Pualas",
+      "Saguiaran",
+      "Sultan Dumalondong",
+      "Picong",
+      "Tagoloan II",
+      "Tamparan",
+      "Taraka",
+      "Tubaran",
+      "Tugaya",
+      "Wao"
+    ]
+  },
+  "MAG": {
+    "name": "Maguindanao",
+    "region": "BARMM",
+    "capital": "Buluan",
+    "founded": "1973-11-22",
+    "area" : 6146.53,
+    "population" : {
+      "1990": 714545,
+      "1995": 808959,
+      "2000": 964951,
+      "2007": 1532868,
+      "2010": 1216504,
+      "2015": 1473371
+    },
+    "districts": 2,
+    "cities": [
+      {
+        "name": "Cotabato",
+        "type": "ICC"
+      }
+    ],
+    "municipalities": [
+      "Ampatuan",
+      "Barira",
+      "Buldon",
+      "Buluan",
+      "Datu Abdullah Sangki",
+      "Datu Anggal Midtimbang",
+      "Datu Blah T. Sinsuat",
+      "Datu Hoffer Ampatuan",
+      "Datu Montawal",
+      "Datu Odin Sinsuat",
+      "Datu Paglas",
+      "Datu Piang",
+      "Datu Salibo",
+      "Datu Saudi-Ampatuan",
+      "Datu Unsay",
+      "General Salipada K. Pendatun",
+      "Guindulungan",
+      "Kabuntalan",
+      "Mamasapano",
+      "Mangudadatu",
+      "Matanog",
+      "Northern Kabuntalan",
+      "Pagalungan",
+      "Paglat",
+      "Pandag",
+      "Parang",
+      "Rajah Buayan",
+      "Shariff Aguak",
+      "Shariff Saydona Mustapha",
+      "South Upi",
+      "Sultan Kudarat",
+      "Sultan Mastura",
+      "Sultan sa Barongis",
+      "Sultan Sumagka",
+      "Talayan",
+      "Upi"
+    ]
+  },
+  "BAS": {
+    "name": "Basilan",
+    "region": "BARMM",
+    "capital": "Lamitan",
+    "founded": "1973-12-27",
+    "area" : 1327.23,
+    "population" : {
+      "1990": 238308,
+      "1995": 295565,
+      "2000": 332828,
+      "2007": 496505,
+      "2010": 391179,
+      "2015": 459367 
+    },
+    "districts": 1,
+    "cities": [
+      {
+        "name": "Isabela",
+        "type": "CC"
+      },
+      {
+        "name": "Lamitan",
+        "type": "CC"
+      }
+    ],
+    "municipalities": [
+      "Akbar",
+      "Al-Barka",
+      "Hadji Mohammad Ajul",
+      "Hadji Muhtamad",
+      "Lantawan",
+      "Maluso",
+      "Sumisip",
+      "Tabuan-Lasa",
+      "Tipo-Tipo",
+      "Tuburan",
+      "Ungkaya Pukan"
+    ]
+  },
+  "SLU": {
+    "name": "Sulu",
+    "region": "BARMM",
+    "capital": "Jolo",
+    "founded": "1917-03-10",
+    "area" : 1600.4,
+    "population" : {
+      "1990": 469971,
+      "1995": 536201,
+      "2000": 619668,
+      "2007": 849670,
+      "2010": 718290,
+      "2015": 824731
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": [
+      "Banguingui",
+      "Hadji Panglima Tahil",
+      "Indanan",
+      "Jolo",
+      "Kalingalan Caluang",
+      "Lugus",
+      "Luuk",
+      "Maimbung",
+      "Old Panamao",
+      "Omar",
+      "Pandami",
+      "Panglima Estino",
+      "Pangutaran",
+      "Parang",
+      "Pata",
+      "Patikul",
+      "Siasi",
+      "Talipao",
+      "Tapul"
+    ]
+  },
+  "TAW": {
+    "name": "Tawi-tawi",
+    "region": "BARMM",
+    "capital": "Bongao",
+    "founded": "1973-09-11",
+    "area" : 1087.4,
+    "population" : {
+      "1990": 228204,
+      "1995": 250718,
+      "2000": 322317,
+      "2007": 450346,
+      "2010": 366550,
+      "2015": 390715
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": [
+      "Bongao",
+      "Languyan",
+      "Mapun",
+      "Panglima Sugala",
+      "Sapa-Sapa",
+      "Sibutu",
+      "Simunul",
+      "Sitangkai",
+      "South Ubian",
+      "Tandubas",
+      "Turtle Islands"
+    ]
+  },
+
+  "SJN": {
+    "name": "San Juan City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "2007-06-17",
+    "area" : 5.95,
+    "population" : {
+      "1990": 126854,
+      "1995": 124187,
+      "2000": 117680,
+      "2007": 125338,
+      "2010": 121430,
+      "2015": 122180
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "MDL": {
+    "name": "Mandaluyong City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1994-04-10",
+    "area" : 21.26,
+    "population" : {
+      "1990": 248143,
+      "1995": 286870,
+      "2000": 278474,
+      "2007": 305576,
+      "2010": 328699,
+      "2015": 386276
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "MKT": {
+    "name": "Makati City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1995-02-04",
+    "area" : 21.57,
+    "population" : {
+      "1990": 453170,
+      "1995": 484176,
+      "2000": 444867,
+      "2007": 567349,
+      "2010": 529039,
+      "2015": 582602
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": []
+  },
+  "PAT": {
+    "name": "Pateros",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1909-03-29",
+    "area" : 1.76,
+    "population" : {
+      "1990": 51409,
+      "1995": 55286,
+      "2000": 57407,
+      "2007": 61940,
+      "2010": 64147,
+      "2015": 63840
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "TGG": {
+    "name": "Taguig City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "2004-12-08",
+    "area" : 53.67,
+    "population" : {
+      "1990": 266637,
+      "1995": 381350,
+      "2000": 467375,
+      "2007": 613343,
+      "2010": 644473,
+      "2015": 804915
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": []
+  },
+  "MNL": {
+    "name": "Manila",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1571-06-24",
+    "area" : 42.88,
+    "population" : {
+      "1990": 1601234,
+      "1995": 1654761,
+      "2000": 1581082,
+      "2007": 1660714,
+      "2010": 1652171,
+      "2015": 1780148
+    },
+    "districts": 6,
+    "cities": [],
+    "municipalities": []
+  },
+  "MLB": {
+    "name": "Malabon City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "2001-04-21",
+    "area" : 15.71,
+    "population" : {
+      "1990": 280027,
+      "1995": 347484,
+      "2000": 338855,
+      "2007": 363681,
+      "2010": 353337,
+      "2015": 365525
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "CLC": {
+    "name": "Caloocan City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1962-02-16",
+    "area" : 55.8,
+    "population" : {
+      "1990": 763415,
+      "1995": 1023159,
+      "2000": 1177604,
+      "2007": 1381610,
+      "2010": 1489040,
+      "2015": 1583978
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": []
+  },
+  "NVT": {
+    "name": "Navotas City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "2007-06-24",
+    "area" : 10.77,
+    "population" : {
+      "1990": 187479,
+      "1995": 229039,
+      "2000": 230403,
+      "2007": 245344,
+      "2010": 249131,
+      "2015": 249463
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "VAL": {
+    "name": "Valenzuela City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1998-12-30",
+    "area" : 47.02,
+    "population" : {
+      "1990": 340227,
+      "1995": 437165,
+      "2000": 485433,
+      "2007": 568928,
+      "2010": 575356,
+      "2015": 620422
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": []
+  },
+  "QZN": {
+    "name": "Quezon City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1939-10-12",
+    "area" : 166.2,
+    "population" : {
+      "1990": 1669776,
+      "1995": 1989419,
+      "2000": 2173831,
+      "2007": 2679450,
+      "2010": 2761720,
+      "2015": 2936116
+    },
+    "districts": 6,
+    "cities": [],
+    "municipalities": []
+  },
+  "MRK": {
+    "name": "Marikina City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1996-12-01",
+    "area" : 21.52,
+    "population" : {
+      "1990": 310227,
+      "1995": 357231,
+      "2000": 391170,
+      "2007": 424610,
+      "2010": 424150,
+      "2015": 450741
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": []
+  },
+  "PSG": {
+    "name": "Pasig City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1995-01-21",
+    "area" : 31,
+    "population" : {
+      "1990": 397679,
+      "1995": 471075,
+      "2000": 505058,
+      "2007": 627445,
+      "2010": 669773,
+      "2015": 755300
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "PSY": {
+    "name": "Pasay City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1947-06-21",
+    "area" : 13.97,
+    "population" : {
+      "1990": 368366,
+      "1995": 408610,
+      "2000": 354908,
+      "2007": 403064,
+      "2010": 392869,
+      "2015": 416522
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "PQE": {
+    "name": "Parañaque City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1998-02-13",
+    "area" : 47.69,
+    "population" : {
+      "1990": 308236,
+      "1995": 391296,
+      "2000": 449811,
+      "2007": 552660,
+      "2010": 588126,
+      "2015": 665822
+    },
+    "districts": 2,
+    "cities": [],
+    "municipalities": []
+  },
+  "LPC": {
+    "name": "Las Piñas City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1997-03-26",
+    "area" : 32.69,
+    "population" : {
+      "1990": 297102,
+      "1995": 413086,
+      "2000": 472780,
+      "2007": 532330,
+      "2010": 552573,
+      "2015": 588894
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  },
+  "MTL": {
+    "name": "Muntinlupa City",
+    "region": "NCR",
+    "capital": "N/A",
+    "founded": "1995-03-01",
+    "area" : 39.75,
+    "population" : {
+      "1990": 278411,
+      "1995": 399846,
+      "2000": 379310,
+      "2007": 452943,
+      "2010": 459941,
+      "2015": 504509
+    },
+    "districts": 1,
+    "cities": [],
+    "municipalities": []
+  }
+}
