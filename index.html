@@ -31,14 +31,17 @@
       const original_width = 4751;
       const original_height = 6104.2;
       
+      let svg, prov;
+
       d3.svg("PHMap.svg").then((svgMap) => {
-        d3.select("body").append(svgMap);
+        d3.select("body").node().prepend(svgMap.documentElement);
+        svg = d3.select("#PHMap");
+        svg.attr("viewBox", [0, 0, original_width, original_height])
+          .on("click", reset);
+        prov = d3.selectAll(".province").on("click", clicked);
+        reset();
       });
 
-      const svg = d3.select("#PHMap");
-      svg.attr("viewBox", [0, 0, original_width, original_height])
-        .on("click", reset);
-      const prov = d3.selectAll(".province").on("click", clicked);
 
       function reset() {
         prov.attr("class", "province")
