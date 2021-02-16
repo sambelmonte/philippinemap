@@ -1,7 +1,7 @@
 
 const width = 800;
 const height = 1000;
-const original_width = 4133.1;
+const original_width = 4751;
 const original_height = 6104.2;
 
 let svg, prov, munData, provData, regData;
