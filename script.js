@@ -1,7 +1,7 @@
 
 const width = 800;
 const height = 1000;
-const original_width = 4133.1;
+const original_width = 4751;
 const original_height = 6104.2;
 
 let svg, prov, munData, provData, regData;
@@ -38,8 +38,8 @@ function reset() {
   d3.selectAll(".full-province").attr("display", "block").raise();
   d3.selectAll(".province-with-indcities").attr("display", "block");
   d3.selectAll(".municipality").attr("class", "municipality");
-  d3.select("#data-pretitle-text").html("");
-  d3.select("#data-title-text").html("PHILIPPINES");
+  d3.select("#data-pretitle").html("");
+  d3.select("#data-title").html("PHILIPPINES");
   svg.transition()
     .duration(750)
     .attr("viewBox", [0, 0, original_width, original_height])
@@ -64,13 +64,13 @@ function clicked(event) {
   svg.transition().duration(750).attr("viewBox", [x-75, y-75, width+150, height+150]);
   if (event.target.parentNode.classList.contains('full-province')) {
     console.log(provData[provId])
-    d3.select("#data-pretitle-text").html("");
-    d3.select("#data-title-text").html(provData[provId].name.toUpperCase());
+    d3.select("#data-pretitle").html("");
+    d3.select("#data-title").html(provData[provId].name.toUpperCase());
   } else if (event.target.parentNode.classList.contains('municipality')) {
     const mun = munData[event.target.parentNode.id];
     console.log(mun)
-    d3.select("#data-pretitle-text").html(provData[mun.province].name.toUpperCase());
-    d3.select("#data-title-text").html(
+    d3.select("#data-pretitle").html(provData[mun.province].name.toUpperCase());
+    d3.select("#data-title").html(
       (
         mun.official_name !== ""
         ? mun.official_name
