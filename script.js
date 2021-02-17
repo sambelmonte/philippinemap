@@ -35,8 +35,8 @@ function reset() {
       const colors = ["#FC7E29", "#AF5315", "#E97000", "#C06500", "#E57325", "#C67317", "#CB802C", "#B33E00", "#D08C3F", "#D06922"];
       pdata.attr("fill", colors[b % 10])
     });
+  d3.selectAll(".province-with-indcities").attr("display", "block").raise();
   d3.selectAll(".full-province").attr("display", "block").raise();
-  d3.selectAll(".province-with-indcities").attr("display", "block");
   d3.selectAll(".municipality").attr("class", "municipality");
   d3.select("#data-pretitle-text").html("");
   d3.select("#data-title-text").html("PHILIPPINES");
@@ -55,14 +55,14 @@ function clicked(event) {
   } = document.getElementById(provId).getBBox();
   event.stopPropagation();
   prov.attr("class", "province");
+  d3.selectAll(".province-with-indcities").attr("display", "block").raise();
   d3.selectAll(".full-province").attr("display", "block").raise();
-  d3.selectAll(".province-with-indcities").attr("display", "block");
   d3.select("#"+provId+"-00").attr("display", "none");
   d3.select("#"+provId+"-01").attr("display", "none");
   d3.select("#"+provId).attr("class", "selectedprovince").raise();
   d3.selectAll(".municipality").attr("class", "municipality");
   svg.transition().duration(750).attr("viewBox", [x-75, y-75, width+150, height+150]);
-  if (event.target.parentNode.classList.contains('full-province')) {
+  if (event.target.parentNode.classList.contains('full-province') || event.target.parentNode.classList.contains('province-with-indcities')) {
     console.log(provData[provId])
     d3.select("#data-pretitle-text").html("");
     d3.select("#data-title-text").html(provData[provId].name.toUpperCase());

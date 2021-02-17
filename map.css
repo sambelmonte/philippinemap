@@ -29,9 +29,9 @@ svg {
   animation-iteration-count: infinite;
 }
 @keyframes selected {
-  0% {stroke-width: 2px;}
-  50% {stroke-width: 4px;}
-  100% {stroke-width: 2px;}
+  0% {stroke-width: 1px;}
+  50% {stroke-width: 2px;}
+  100% {stroke-width: 1px;}
 }
 
 /* DATA */
