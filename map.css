@@ -41,22 +41,22 @@ svg {
   top: 50px;
   left: 50px;
   color: black;
-}
-#data-pretitle {
-  font-size: 20px;
   font-family: 'Noto Sans JP', sans-serif;
+}
+.data-subtitle {
+  font-size: 20px;
   font-weight: 100;
 }
-#data-title {
+.data-title {
   font-size: 40px;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
 }
-#data-pretitle-text {
+.data-subtitle-text {
   background-color:yellow;
   line-height:1.5
 }
-#data-title-text {
+.data-title-text {
   background-color:yellow;
   line-height:1.5
 }

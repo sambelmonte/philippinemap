@@ -40,6 +40,7 @@ function reset() {
   d3.selectAll(".municipality").attr("class", "municipality");
   d3.select("#data-pretitle-text").html("");
   d3.select("#data-title-text").html("PHILIPPINES");
+  d3.select("#data-subtitle-text").html("");
   svg.transition()
     .duration(750)
     .attr("viewBox", [0, 0, original_width, original_height])
@@ -66,6 +67,7 @@ function clicked(event) {
     console.log(provData[provId])
     d3.select("#data-pretitle-text").html("");
     d3.select("#data-title-text").html(provData[provId].name.toUpperCase());
+    d3.select("#data-subtitle-text").html("");
   } else if (event.target.parentNode.classList.contains('municipality')) {
     const mun = munData[event.target.parentNode.id];
     console.log(mun)
@@ -79,6 +81,7 @@ function clicked(event) {
         : mun.name
       ).toUpperCase()
     );
+    d3.select("#data-subtitle-text").html("");
     d3.select("#"+event.target.parentNode.id).attr("class", "municipality selectedmunicipality").raise();
   }
 }
