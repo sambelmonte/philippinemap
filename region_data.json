@@ -1,19 +1,70 @@
 {
-  "0"  : "National Capital Region",
-  "1"  : "Ilocos Region",
-  "2"  : "Cagayan Valley",
-  "3"  : "Central Luzon",
-  "5"  : "Bicol Region",
-  "6"  : "Western Visayas",
-  "7"  : "Central Visayas",
-  "8"  : "Eastern Visayas",
-  "9"  : "Zamboanga Peninsula",
-  "10" : "Northern Mindanao",
-  "11" : "Davao Region",
-  "12" : "Soccsksargen",
-  "13" : "Caraga Region",
-  "14" : "Bangsamoro Autonomous Region for Muslim Mindanao",
-  "15" : "Cordillera Administrative Region",
-  "40" : "Calabarzon",
-  "41" : "Mimaropa"
+  "0"  : {
+    "name" : "National Capital Region",
+    "region": "NCR"
+  },
+  "1"  : {
+    "name" : "Ilocos Region",
+    "region": "REGION 1"
+  },
+  "2"  : {
+    "name" : "Cagayan Valley",
+    "region": "REGION 2"
+  },
+  "3"  : {
+    "name" : "Central Luzon",
+    "region": "REGION 3"
+  },
+  "5"  : {
+    "name" : "Bicol Region",
+    "region": "REGION 5"
+  },
+  "6"  : {
+    "name" : "Western Visayas",
+    "region": "REGION 6"
+  },
+  "7"  : {
+    "name" : "Central Visayas",
+    "region": "REGION 7"
+  },
+  "8"  : {
+    "name" : "Eastern Visayas",
+    "region": "REGION 8"
+  },
+  "9"  : {
+    "name" : "Zamboanga Peninsula",
+    "region": "REGION 9"
+  },
+  "10" : {
+    "name" : "Northern Mindanao",
+    "region": "REGION 10"
+  },
+  "11" : {
+    "name" : "Davao Region",
+    "region": "REGION 11"
+  },
+  "12" : {
+    "name" : "Soccsksargen",
+    "region": "REGION 12"
+  },
+  "13" : {
+    "name" : "Caraga Region",
+    "region": "REGION 13"
+  },
+  "14" : {
+    "name" : "Bangsamoro",
+    "region": "BARMM"
+  },
+  "15" : {
+    "name" : "Cordillera Administrative Region",
+    "region": "CAR"
+  },
+  "40" : {
+    "name" : "Calabarzon",
+    "region": "REGION 4-A"
+  },
+  "41" : {
+    "name" : "Mimaropa",
+    "region": "REGION 4-B"
+  }
 }

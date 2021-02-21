@@ -65,13 +65,17 @@ function clicked(event) {
   svg.transition().duration(750).attr("viewBox", [x-75, y-75, width+150, height+150]);
   if (event.target.parentNode.classList.contains('full-province') || event.target.parentNode.classList.contains('province-with-indcities')) {
     console.log(provData[provId])
-    d3.select("#data-pretitle-text").html("");
+    d3.select("#data-pretitle-text").html(
+      provData[provId].region !== 0
+      ? regData[provData[provId].region.toString()].name.toUpperCase()
+      : ""
+    );
     d3.select("#data-title-text").html(provData[provId].name.toUpperCase());
     d3.select("#data-subtitle-text").html("");
   } else if (event.target.parentNode.classList.contains('municipality')) {
     const mun = munData[event.target.parentNode.id];
     console.log(mun)
-    d3.select("#data-pretitle-text").html(provData[mun.province].name.toUpperCase());
+    d3.select("#data-pretitle-text").html(regData[mun.region.toString()].name.toUpperCase());
     d3.select("#data-title-text").html(
       (
         mun.official_name !== ""
@@ -81,7 +85,11 @@ function clicked(event) {
         : mun.name
       ).toUpperCase()
     );
-    d3.select("#data-subtitle-text").html("");
+    d3.select("#data-subtitle-text").html(
+      mun.region !== 0 && (mun.type === "MUN" || mun.type === "CC")
+      ? provData[mun.province].name.toUpperCase()
+      : ""
+    );
     d3.select("#"+event.target.parentNode.id).attr("class", "municipality selectedmunicipality").raise();
   }
 }
