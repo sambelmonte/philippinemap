@@ -27,6 +27,12 @@ d3.json(`${fileURL}region_data.json`).then((regDataJson) => {
   regData = regDataJson;
 });
 
+function setLabels(pretitle, title, subtitle) {
+  d3.select("#data-pretitle-text").html(pretitle);
+  d3.select("#data-title-text").html(title);
+  d3.select("#data-subtitle-text").html(subtitle);
+}
+
 function reset() {
   prov.attr("class", "province")
     .each((a, b, c) => {
@@ -38,9 +44,7 @@ function reset() {
   d3.selectAll(".province-with-indcities").attr("display", "block").raise();
   d3.selectAll(".full-province").attr("display", "block").raise();
   d3.selectAll(".municipality").attr("class", "municipality");
-  d3.select("#data-pretitle-text").html("");
-  d3.select("#data-title-text").html("PHILIPPINES");
-  d3.select("#data-subtitle-text").html("");
+  setLabels("","PHILIPPINES","");
   svg.transition()
     .duration(750)
     .attr("viewBox", [0, 0, original_width, original_height])
@@ -65,30 +69,27 @@ function clicked(event) {
   svg.transition().duration(750).attr("viewBox", [x-75, y-75, width+150, height+150]);
   if (event.target.parentNode.classList.contains('full-province') || event.target.parentNode.classList.contains('province-with-indcities')) {
     console.log(provData[provId])
-    d3.select("#data-pretitle-text").html(
+    setLabels(
       provData[provId].region !== 0
-      ? regData[provData[provId].region.toString()].name.toUpperCase()
-      : ""
+        ? regData[provData[provId].region.toString()].name.toUpperCase()
+        : "",
+      provData[provId].name.toUpperCase(),
+      ""
     );
-    d3.select("#data-title-text").html(provData[provId].name.toUpperCase());
-    d3.select("#data-subtitle-text").html("");
   } else if (event.target.parentNode.classList.contains('municipality')) {
     const mun = munData[event.target.parentNode.id];
     console.log(mun)
-    d3.select("#data-pretitle-text").html(regData[mun.region.toString()].name.toUpperCase());
-    d3.select("#data-title-text").html(
-      (
-        mun.official_name !== ""
+    setLabels(
+      regData[mun.region.toString()].name.toUpperCase(),
+      (mun.official_name !== ""
         ? mun.official_name
         : mun.type !== "MUN"
         ? `${mun.name} City`
         : mun.name
-      ).toUpperCase()
-    );
-    d3.select("#data-subtitle-text").html(
+      ).toUpperCase(),
       mun.region !== 0 && (mun.type === "MUN" || mun.type === "CC")
-      ? provData[mun.province].name.toUpperCase()
-      : ""
+        ? provData[mun.province].name.toUpperCase()
+        : ""
     );
     d3.select("#"+event.target.parentNode.id).attr("class", "municipality selectedmunicipality").raise();
   }
