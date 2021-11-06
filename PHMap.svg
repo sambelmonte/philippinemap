@@ -1,7 +1,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 4751 6104.2" enable-background="new 0 0 4751 6104.2" xml:space="preserve" id="PHMap">
-	<div id="provNames"></div>
 	<g id="PH" class="country">
+		<g id="provNames"></g>
 		<g id="ZSI" class="province">
 			<g id="ZSI-II" class="municipality">
 				<path d="M3274.2,4889.8l-30.9,25.1c2.4,7.7,6.2,14.6,12.8,19.6l3.6-8.3
