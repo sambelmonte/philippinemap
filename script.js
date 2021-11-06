@@ -6,8 +6,8 @@ const original_height = 6104.2;
 
 let svg, prov, munData, provData, regData;
 
-// const fileURL = "";
-const fileURL = "https://ph-map-v2.vercel.app/";
+const fileURL = "";
+// const fileURL = "https://ph-map-v2.vercel.app/";
 d3.svg(`${fileURL}PHMap.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
@@ -84,7 +84,7 @@ function clicked(event) {
       (mun.official_name !== ""
         ? mun.official_name
         : mun.type !== "MUN"
-        ? `${mun.name} City`
+        ? `City of ${mun.name}`
         : mun.name
       ).toUpperCase(),
       mun.region !== 0 && (mun.type === "MUN" || mun.type === "CC")

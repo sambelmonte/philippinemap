@@ -20,6 +20,11 @@ try {
         '2015': munData[10],
         '2020': munData[11],
       },
+      pop_growth: {
+        '2015': ((munData[10] - munData[9])/ munData[10] / 5 * 100).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%",
+        '2020': ((munData[11] - munData[10])/ munData[11] / 5 * 100).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%"
+      },
+      pop_density: (munData[11] / munData[12]).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}),
       area: munData[12],
       barangays: munData[13],
       region: munData[14],
