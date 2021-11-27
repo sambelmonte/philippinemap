@@ -8,7 +8,7 @@ svg {
   height: 100%;
   width: 100%;
 }
-.province {
+.full-lgu {
   stroke: white;
   stroke-width: 1px;
   cursor: pointer;
@@ -16,7 +16,7 @@ svg {
 .municipality {
   cursor: pointer;
 }
-.selectedprovince {
+.selectedlgu {
   fill: white;
   stroke: lightgrey;
   stroke-width: 1px;
@@ -59,4 +59,31 @@ svg {
 .data-title-text {
   background-color:yellow;
   line-height:1.5
+}
+
+.text {
+  fill: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */   
+  cursor: pointer;
+}
+
+.text-not-chosen {
+  opacity: 30%;
+}
+
+.text-province {
+  font-size: 32px;
+}
+
+.text-region {
+  font-size: 20px;
+}
+
+.text-city {
+  font-size: 14px;
 }
