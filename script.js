@@ -3,8 +3,8 @@ let original_x, original_y, original_width, original_height;
 
 let svg, prov, muns, munData, provData, regData;
 
-// const fileURL = "";
-const fileURL = "https://philippinemap.vercel.app/";
+const fileURL = "";
+// const fileURL = "https://philippinemap.vercel.app/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
