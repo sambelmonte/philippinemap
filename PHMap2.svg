@@ -253,7 +253,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 2172.8687 2446.9705)" class="text text-province">ZAMBALES</text>
 		</g>
-		<g id="OLG" class="lgu">
+		<g id="OLG" class="lgu lgu-city">
 			<g id="OLG-99" class="municipality">
 				<polygon class="st2" points="2496.9,2551.7 2453.3,2553.2 2444,2562.3 2432.9,2581.9 2439.7,2580.9 2441.4,2590.7 2445,2594.8 
 					2450.9,2590.7 2452.6,2591.3 2451.2,2594.9 2460.4,2585.2 2470.5,2580.7 2486,2578.6 2500.2,2556.7 			"/>
@@ -474,7 +474,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3445.0437 5215.4014)" class="text text-province"><tspan x="0" y="0">ZAMBOANGA</tspan><tspan x="39.7" y="43.2" class="st4 st5">DEL SUR</tspan></text>
 		</g>
-		<g id="ZBC" class="lgu">
+		<g id="ZBC" class="lgu lgu-city">
 			<g id="ZBC-99" class="municipality">
 				<polygon class="st2" points="3125.6,5401 3124.5,5435.9 3116.8,5456.2 3089.8,5481.1 3021.8,5481.1 3021.6,5483 3017.9,5484.6 
 					3018.7,5491.9 3016.4,5499.5 3017.9,5505.1 3016.4,5511.7 3019.6,5520 3024.8,5536.8 3024.8,5542.4 3029.4,5551.2 3039.3,5561.7 
@@ -2469,7 +2469,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 4042.2278 5775.9663)" class="text text-province"><tspan x="0" y="0">SOUTH</tspan><tspan x="-31.3" y="43.2" class="st4 st5">COTABATO</tspan></text>
 		</g>
-		<g id="GSC" class="lgu">
+		<g id="GSC" class="lgu lgu-city">
 			<g id="GSC-99" class="municipality">
 				<polygon class="st2" points="4259.1,5804.2 4255.6,5794.5 4243.5,5792.2 4238.2,5786.1 4222.6,5780.1 4216.5,5789.5 
 					4218.1,5793.1 4212.4,5807.1 4210.5,5808 4210.4,5816.6 4215.4,5826.7 4216,5841.6 4214.1,5841.9 4214.2,5845.5 4182,5845.5 
@@ -3206,7 +3206,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 2936.813 2713.6594)" class="text text-province">QUEZON</text>
 		</g>
-		<g id="LUC" class="lgu">
+		<g id="LUC" class="lgu lgu-city">
 			<g id="LUC-99" class="municipality">
 				<path class="st2" d="M2913,2903.4c-10.7-4.5-19.8,5.4-28.7,11.1l10.3,23l0.8-0.4l6,1.6l4.7-0.2l0.5-5.4l27.6-6.6l0.1-0.5
 					C2924,2920.8,2922.8,2907.3,2913,2903.4z"/>
@@ -4429,7 +4429,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 1824.1388 4178.0576)" class="text text-province">PALAWAN</text>
 		</g>
-		<g id="PPC" class="lgu">
+		<g id="PPC" class="lgu lgu-city">
 			<g id="PPC-99" class="municipality">
 				<polygon class="st2" points="1898.8,4346.2 1911.9,4334.5 1884.5,4311.2 1884.5,4311.4 1881.2,4311.1 1877.9,4314.2 
 					1874.7,4314.8 1870.5,4310.8 1872.1,4316.1 1870.8,4318.8 1868.3,4319.1 1867.2,4321.3 1864.5,4321.7 1862.6,4318.4 
@@ -4776,7 +4776,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 2375.3792 2211.3318)" class="text text-province">PANGASINAN</text>
 		</g>
-		<g id="DAG" class="lgu">
+		<g id="DAG" class="lgu lgu-city">
 			<g id="DAG-99" class="municipality">
 				<path class="st2" d="M2479.1,2130.3l-1.7,2.1l-19.6,14.1l-11.1,4.6l9.1,11.6l29.7-3c-2.8-4-4.6-9.6-4.6-13.4
 					C2481.9,2140.1,2482,2135.5,2479.1,2130.3z"/>
@@ -4952,7 +4952,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 2481.5845 2522.7849)" class="text text-province">PAMPANGA</text>
 		</g>
-		<g id="ANG" class="lgu">
+		<g id="ANG" class="lgu lgu-city">
 			<g id="ANG-99" class="municipality">
 				<polygon class="st2" points="2555.2,2483.6 2555.2,2483.6 2555.2,2483.6 2561.5,2482.6 2565.6,2477.5 2565.3,2470 2562.9,2467 
 					2548.4,2468.9 2546.4,2470.9 2546.4,2470.9 2546.4,2470.9 2534.8,2470.7 2534.8,2470.7 2534.8,2470.7 2532.3,2467.9 2524,2467.7 
@@ -5760,7 +5760,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3424.4158 4112.3384)" class="text text-province"><tspan x="0" y="0">NEGROS</tspan><tspan x="-35.4" y="43.2" class="st4 st5">OCCIDENTAL</tspan></text>
 		</g>
-		<g id="BCL" class="lgu">
+		<g id="BCL" class="lgu lgu-city">
 			<g id="BCL-99" class="municipality">
 				<polygon class="st2" points="3408.9,4200.1 3408.9,4200.1 3431.9,4186.8 3375.9,4151.8 3375.3,4152.2 3376.7,4164.4 
 					3367.6,4177.6 3367.6,4188.4 3362.4,4197.9 3375.3,4212.1 3396.9,4215.3 3408.9,4200.1 			"/>
@@ -6053,7 +6053,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3930.8052 4854.8887)" class="text text-province"><tspan x="0" y="0">MISAMIS</tspan><tspan x="-9.2" y="43.2" class="st4 st5">ORIENTAL</tspan></text>
 		</g>
-		<g id="CDO" class="lgu">
+		<g id="CDO" class="lgu lgu-city">
 			<g id="CDO-99" class="municipality">
 				<polygon class="st2" points="4097.5,4991.5 4089,4984.3 4088.6,4980.7 4085.8,4978.9 4080,4978.5 4078.6,4980 4068.8,4979.9 
 					4068.6,4982.7 4060.7,4987.6 4050.8,4993.7 4040.4,4990.3 4037.5,4984.9 4037,4977 4023,4976.1 4018.2,4982.7 4018.2,4982.7 
@@ -7048,7 +7048,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3793.3953 5574.8638)" class="text text-province">MAGUINDANAO</text>
 		</g>
-		<g id="COT" class="lgu">
+		<g id="COT" class="lgu lgu-city">
 			<g id="COT-99" class="municipality">
 				<polygon class="st2" points="3916.8,5476.2 3916.8,5476.2 3915,5473.1 3909.4,5472.9 3909.4,5472.9 3909.4,5472.9 3899.5,5465.2 
 					3899.5,5465.2 3899.5,5465.2 3892.1,5457.4 3892.1,5457.4 3892.1,5457.4 3893.9,5455.6 3885.8,5449.7 3885.8,5449.7 
@@ -7470,7 +7470,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 4054.2759 4088.8086)" class="text text-province">LEYTE</text>
 		</g>
-		<g id="ORM" class="lgu">
+		<g id="ORM" class="lgu lgu-city">
 			<g id="ORM-99" class="municipality">
 				<polygon class="st2" points="4036.9,3991.1 4036.9,3991.1 4036.9,3991.1 4034.3,3986.6 4031.3,3984.9 4024,3984.9 4017.3,3988.3 
 					4010.4,3995.4 4010.1,4004.2 4010.1,4004.2 4010.1,4004.2 3985.9,3997.9 3985.9,3997.9 3985.9,3997.9 3984.8,3992.2 3982,3989.1 
@@ -7487,7 +7487,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3983.7866 4028.8499)" class="text text-city">ORMOC</text>
 		</g>
-		<g id="TAC" class="lgu">
+		<g id="TAC" class="lgu lgu-city">
 			<g id="TAC-99" class="municipality">
 				<polygon class="st2" points="4157.8,3958.5 4157.5,3960.1 4159.5,3965.8 4154.3,3963.8 4152.1,3957.7 4155.3,3951.4 
 					4153.1,3948.4 4148.9,3950.9 4147.8,3947.3 4144.8,3946.1 4144.2,3949.1 4142.1,3948.8 4140.9,3946.1 4138.9,3944.5 
@@ -7825,7 +7825,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3708.405 5160.6865)" class="text text-province"><tspan x="0" y="0">LANAO</tspan><tspan x="-30.1" y="43.2" class="st4 st5">DEL NORTE</tspan></text>
 		</g>
-		<g id="ILG" class="lgu">
+		<g id="ILG" class="lgu lgu-city">
 			<g id="ILG-99" class="municipality">
 				<polygon class="st2" points="4006.2,5088.4 4007.9,5086.6 3994.8,5067 3992.5,5060.3 3989.2,5060.3 3982.1,5052.9 3976.3,5053 
 					3972.3,5049.6 3971.9,5044.6 3967.1,5044.4 3964.6,5048.2 3891.2,5049.9 3891.4,5057.7 3894.9,5062.1 3889.2,5067.4 
@@ -8353,7 +8353,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 2978.0354 1811.3969)" class="text text-province">ISABELA</text>
 		</g>
-		<g id="SNT" class="lgu">
+		<g id="SNT" class="lgu lgu-city">
 			<g id="SNT-99" class="municipality">
 				<polygon class="st2" points="2928.6,1951.2 2928.6,1951.2 2918,1941.2 2918,1941.2 2918,1941.2 2917.5,1931.1 2903.2,1931 
 					2903.2,1931 2903.2,1931 2899.5,1916.7 2893.7,1909.2 2890.1,1913.8 2890.1,1913.8 2890.1,1913.8 2876.3,1917.5 2876.3,1917.5 
@@ -8972,7 +8972,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3179.6938 4041.0972)" class="text text-province">ILOILO</text>
 		</g>
-		<g id="ILC" class="lgu">
+		<g id="ILC" class="lgu lgu-city">
 			<g id="ILC-99" class="municipality">
 				<path class="st2" d="M3239.5,4157l3.3-7.5l-5.6-4.7l2.3-3.8l-10.4-8c-7.1,4.6-17.8,6.8-12.1,16.4c-5.4,0.9-6.8-5.5-11.4-5.3
 					l6.6,12.5l-4.9,11.2l9.1,0.9l8.3-3.6l10.8,0l1.1-1.5l-6.2-3l-6.3,0.6l-1.5-2.1l7.1-0.4l9.2,3.3l0.2-1.8l-3.1-0.6l-1.5-2.4
@@ -9348,7 +9348,6 @@
 					4346.6,6089.4 4344.3,6089.8 			"/>
 			</g>
 			<text transform="matrix(1 0 0 1 4383.9458 6004.9922)" class="text text-province"><tspan x="0" y="0">DAVAO</tspan><tspan x="-42.3" y="43.2" class="st4 st5">OCCIDENTAL</tspan></text>
-			<text transform="matrix(1 0 0 1 4328.1064 5615.4116)" class="text text-province"><tspan x="0" y="0">DAVAO</tspan><tspan x="-6.9" y="43.2" class="st4 st5">DEL SUR</tspan></text>
 		</g>
 		<g id="DIN" class="lgu">
 			<g id="DIN-TJ" class="municipality">
@@ -9590,8 +9589,9 @@
 					4312.4,5679.9 4308.1,5678.6 4305.1,5677.7 4304.9,5670.9 4304.6,5655.6 4304.3,5645 4302.1,5641.5 4302.3,5637 4302.8,5635 
 					4306.8,5620.8 4304.3,5618.5 4306.5,5617.3 4306.5,5611.7 4306.5,5608.7 4319.8,5591.8 			"/>
 			</g>
+			<text transform="matrix(1 0 0 1 4328.1064 5615.4116)" class="text text-province"><tspan x="0" y="0">DAVAO</tspan><tspan x="-6.9" y="43.2" class="st4 st5">DEL SUR</tspan></text>
 		</g>
-		<g id="DVC" class="lgu">
+		<g id="DVC" class="lgu lgu-city">
 			<g id="DVC-99" class="municipality">
 				<polygon class="st2" points="4409.3,5442 4410.7,5439.7 4405.5,5432.2 4390.8,5440.8 4388.6,5446.2 4367.2,5446.1 4367.9,5374.1 
 					4371.5,5374.2 4371.5,5369.5 4367.6,5370.4 4360,5366.4 4355.7,5360.3 4353.5,5341.4 4348,5336.4 4347.5,5327.6 4256.5,5326.6 
@@ -10106,7 +10106,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3689.6636 4208.4805)" class="text text-province">CEBU</text>
 		</g>
-		<g id="LLC" class="lgu">
+		<g id="LLC" class="lgu lgu-city">
 			<g id="LLC-99" class="municipality">
 				<path class="st2" d="M3788.1,4302.5l-6.4,5.7l-8.1,0.3l-2.9-4.5l-4.3-0.6l-17.9,10.7l0.4,4.3l-4.1,5.6l0.9,5.9l1.6,0.9l1.3-1.2
 					l-0.2-2.9l3.9-5.2l1.1,1l-3.8,3.7l0.5,1.3c1.9-1.3,4.8-0.5,7.2-1.6l-0.4-1.7l1.3-0.3l3.4,3.7l1.2,5.7l2.3,1l6.1-6.6l-1-2l6.6-2.6
@@ -10125,7 +10125,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3809.2847 4323.2891)" class="text text-city">LAPU-LAPU</text>
 		</g>
-		<g id="CBC" class="lgu">
+		<g id="CBC" class="lgu lgu-city">
 			<g id="CBC-99" class="municipality">
 				<path class="st2" d="M3748,4300.4c-2,0-4-1-4-2c3.9-17.7,9.8-34.4,3.4-51.1l-0.8-0.1l-11.8-9.4l-50.5,38.3l-0.1-0.1l6.1,14l0,0
 					l0,0l-1.9,15.2l3.7,0.7l7.5-3.8l0,0l0,0l6.6,1.3l0,0l0,0l-0.5,10.6l8.7,13.2l10.9,3.4l4.3-1.1l2.2-6.4l2.2-3l8.2-1.2l1.7-5.3
@@ -10138,7 +10138,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3702.2725 4279.9355)" class="text text-city"><tspan x="0" y="0">CEBU</tspan><tspan x="3.6" y="21.6">CITY</tspan></text>
 		</g>
-		<g id="MDE" class="lgu">
+		<g id="MDE" class="lgu lgu-city">
 			<g id="MDE-99" class="municipality">
 				<path class="st2" d="M3744,4298.4c0,1,2,2,4,2c-0.9,4.3-1,7.2,0.9,10.4l1.8-0.9l1.2-2.4l6.8-1.6l2-9.4l-2.4-2.3l0.3-1l-11-10.4
 					C3746.5,4287.9,3745.2,4293.1,3744,4298.4z"/>
@@ -10655,7 +10655,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 3414.8467 3076.3005)" class="text text-province"><tspan x="0" y="0">CAMARINES</tspan><tspan x="60.3" y="43.2" class="st4 st5">SUR</tspan></text>
 		</g>
-		<g id="NAG" class="lgu">
+		<g id="NAG" class="lgu lgu-city">
 			<g id="NAG-99" class="municipality">
 				<polygon class="st2" points="3508.6,3033.9 3508.6,3033.9 3508.6,3033.9 3521.6,3030 3521.6,3030 3521.6,3030 3540.9,3029.9 
 					3540.1,3027.8 3512.9,3017.6 3507.1,3020.7 3501,3024 3488.4,3025.9 3481.4,3027 3475.6,3030 3470.8,3035.4 3466.7,3043.7 
@@ -12194,7 +12194,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 2515.4148 2004.9637)" class="text text-province">BENGUET</text>
 		</g>
-		<g id="BAG" class="lgu">
+		<g id="BAG" class="lgu lgu-city">
 			<g id="BAG-99" class="municipality">
 				<polygon class="st2" points="2547.2,2040.5 2568.1,2042.9 2568.7,2043.6 2568.9,2020.9 2540.5,2018 			"/>
 			</g>
@@ -13097,7 +13097,7 @@
 			</g>
 			<text transform="matrix(1 0 0 1 4188.8442 4711.9775)" class="text text-province"><tspan x="0" y="0">AGUSAN</tspan><tspan x="-18.9" y="43.2" class="st4 st5">DEL NORTE</tspan></text>
 		</g>
-		<g id="BUT" class="lgu">
+		<g id="BUT" class="lgu lgu-city">
 			<g id="BUT-99" class="municipality">
 				<polygon class="st2" points="4370.1,4781 4371.4,4794.2 4356.9,4794.5 4353.4,4790.5 4341.6,4791.1 4339.7,4794.6 4324.7,4802.4 
 					4327.7,4862.5 4340.3,4877.5 4340.3,4877.5 4340.3,4877.5 4338.1,4893.6 4402.3,4888.9 4402.5,4883.4 4394.5,4869.6 
