@@ -3,7 +3,8 @@
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com"> <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="map.css"> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Map of the Philippines</title>
   </head>
   <style>
@@ -11,13 +12,19 @@
   <body>
     <div id="data">
       <div id="data-pretitle" class="data-subtitle">
-        <span id="data-pretitle-text" class="data-subtitle-text"></span>
+        <span id="data-pretitle-container" class="data-container">
+          <span id="data-pretitle-text" class="data-subtitle-text"></span>
+        </span>
       </div>
       <div id="data-title" class="data-title">
-        <span id="data-title-text" class="data-title-text"></span>
+        <span id="data-title-container" class="data-container">
+          <span id="data-title-text" class="data-title-text"></span>
+        </span>
       </div>
       <div id="data-subtitle" class="data-subtitle">
-        <span id="data-subtitle-text" class="data-subtitle-text"></span>
+        <span id="data-subtitle-container" class="data-container">
+          <span id="data-subtitle-text" class="data-subtitle-text"></span>
+        </span>
       </div>
     </div>
     <script src="https://d3js.org/d3.v6.min.js"></script>

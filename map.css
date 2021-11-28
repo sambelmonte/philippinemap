@@ -10,7 +10,7 @@ svg {
 }
 .full-lgu {
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 2px;
   cursor: pointer;
 }
 .municipality {
@@ -23,15 +23,23 @@ svg {
 }
 .selectedmunicipality {
   fill: white;
-  stroke: black;
   animation-name: selected;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 @keyframes selected {
-  0% {stroke-width: 1px;}
-  50% {stroke-width: 2px;}
-  100% {stroke-width: 1px;}
+  0% {
+    stroke-width: 1px;
+    stroke: dimgray;
+  }
+  50% {
+    stroke-width: 2px;
+    stroke: black;
+  }
+  100% {
+    stroke-width: 1px;
+    stroke: dimgray;
+  }
 }
 
 /* DATA */
@@ -52,13 +60,22 @@ svg {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
 }
+.data-container {
+  display: inline-block;
+}
 .data-subtitle-text {
   background-color:yellow;
-  line-height:1.5
+  line-height:1.5;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .data-title-text {
   background-color:yellow;
-  line-height:1.5
+  line-height:1.5;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .text {
@@ -73,7 +90,7 @@ svg {
 }
 
 .text-not-chosen {
-  opacity: 30%;
+  opacity: 10%;
 }
 
 .text-province {

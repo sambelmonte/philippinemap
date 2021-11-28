@@ -3,8 +3,8 @@ let original_x, original_y, original_width, original_height;
 
 let svg, prov, muns, munData, provData, regData;
 
-const fileURL = "";
-// const fileURL = "https://philippinemap.vercel.app/";
+// const fileURL = "";
+const fileURL = "https://philippinemap.vercel.app/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
@@ -41,9 +41,21 @@ function mouseovered(event) {
 }
 
 function setLabels(pretitle, title, subtitle) {
-  d3.select("#data-pretitle-text").html(pretitle);
-  d3.select("#data-title-text").html(title);
-  d3.select("#data-subtitle-text").html(subtitle);
+  d3.select("#data-pretitle-text").html(pretitle)
+    .style("width", "0%")
+    .transition()
+    .duration(500)
+    .style("width", "100%");
+  d3.select("#data-title-text").html(title)
+    .style("width", "0%")
+    .transition()
+    .duration(500)
+    .style("width", "100%");
+  d3.select("#data-subtitle-text").html(subtitle)
+    .style("width", "0%")
+    .transition()
+    .duration(500)
+    .style("width", "100%");
 }
 
 function reset() {
