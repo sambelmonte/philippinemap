@@ -13,7 +13,8 @@ const PHDATA = {
   barangays: 42046,
   population: {
     "2020": 109035343
-  }
+  },
+  pop_density: (109035343/298170).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
 };
 
 const YEAR = "2020";
@@ -133,6 +134,11 @@ const detailList = [
   {
     name: 'type',
     type: 'type',
+  },
+  {
+    name: 'old_name',
+    label: 'former name',
+    type: 'text',
   },
   {
     name: 'capital',
