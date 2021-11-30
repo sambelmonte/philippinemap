@@ -18,8 +18,8 @@ const PHDATA = {
 
 const YEAR = "2020";
 
-// const fileURL = "";
-const fileURL = "https://philippinemap.vercel.app/";
+const fileURL = "";
+// const fileURL = "https://philippinemap.vercel.app/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
