@@ -26,6 +26,7 @@ svg {
   animation-name: selected;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+  cursor: default;
 }
 @keyframes selected {
   0% {
@@ -90,7 +91,7 @@ svg {
 }
 
 .text-not-chosen {
-  opacity: 10%;
+  opacity: 15%;
 }
 
 .text-province {
@@ -103,4 +104,27 @@ svg {
 
 .text-city {
   font-size: 14px;
+}
+
+#data-details {
+  margin-top: 15px;
+}
+
+.data-details {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.data-label {
+  background-color:yellow;
+  line-height:1.5;
+  font-size: 12px;
+}
+
+.data-text {
+  background-color:yellow;
+  line-height:1.5;
+  font-size: 15px;
+  margin-left: 5px;
 }

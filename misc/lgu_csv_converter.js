@@ -22,6 +22,9 @@ try {
       },
       pop_density: (munData[7] / munData[8]).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}),
       area: munData[8],
+      municipalities: munData[9],
+      cities: munData[10],
+      barangays: munData[11]
     };
   }
 
