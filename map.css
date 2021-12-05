@@ -8,6 +8,8 @@ svg {
   height: 100%;
   width: 100%;
 }
+
+/* MAP */
 .full-lgu {
   stroke: white;
   stroke-width: 2px;
@@ -127,4 +129,55 @@ svg {
   line-height:1.5;
   font-size: 15px;
   margin-left: 5px;
+}
+
+/* HEADER AND MAP SWITCH */
+#data-header {
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#logo {
+  background-image: url(logo192.png);
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+#map-switch {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 10px;
+  padding: 0 5px;
+  user-select: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.map-switch-button {
+  background-color: midnightblue;
+  border-radius: 10px;
+  color: aliceblue;
+  margin: 5px 0px;
+  width: 30px;
+  font-size: 7px;
+  padding: 5px;
+}
+
+.map-switch-button:not(.map-switch-clicked) {
+  cursor: pointer;
+}
+
+.map-switch-clicked {
+  background-color: #9f9fe9;
 }

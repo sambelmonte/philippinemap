@@ -1,7 +1,7 @@
 
 let original_x, original_y, original_width, original_height;
 
-let svg, prov, muns, munData, provData, regData;
+let svg, prov, muns, munData, provData, regData, switches;
 
 const PHDATA = {
   capital: "Manila",
@@ -19,8 +19,10 @@ const PHDATA = {
 
 const YEAR = "2020";
 
-const fileURL = "";
-// const fileURL = "https://philippinemap.vercel.app/";
+let colorProvBy = "province";
+
+// const fileURL = "";
+const fileURL = "https://sambelmonte.github.io/philippinemap/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
@@ -39,6 +41,8 @@ d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
     // .on("mouseover", mouseovered)
     // .on("mouseout", mouseout)
     .on("click", clicked);
+  switches = d3.selectAll(".map-switch-button")
+    .on("click", switched);
   reset();
 });
 
@@ -57,13 +61,8 @@ d3.json(`${fileURL}region_data.json`).then((regDataJson) => {
 // }
 
 function reset() {
-  prov.classed("selectedlgu", false).classed("lgu", true)
-    .each((a, b, c) => {
-      const pId = c[b].id;
-      const pdata = d3.select(`#${pId}`);
-      const colors = ["#FC7E29", "#AF5315", "#E97000", "#C06500", "#E57325", "#C67317", "#CB802C", "#B33E00", "#D08C3F", "#D06922"];
-      pdata.attr("fill", colors[b % 10])
-    });
+  prov.classed("selectedlgu", false).classed("lgu", true);
+  provColor();
   d3.selectAll(".full-lgu").attr("display", "block").raise();
   d3.selectAll(".full-province").attr("display", "none");
   d3.selectAll(".lgu-city").raise();
@@ -248,4 +247,116 @@ function typeSwitch(type) {
     case 'REG': return 'REGION';
     default: return '';
   }
+}
+
+function switched(event) {
+  switches.classed('map-switch-clicked', false);
+  d3.select(`#${event.target.id}`).classed('map-switch-clicked', true);
+  switch(event.target.id) {
+    case 'map-switch-reg':
+      colorProvBy = 'region';
+      break;
+    case 'map-switch-pop':
+      colorProvBy = 'population';
+      break;
+    case 'map-switch-area':
+      colorProvBy = 'area';
+      break;
+    case 'map-switch-density':
+      colorProvBy = 'density';
+      break;
+    case 'map-switch-growth':
+      colorProvBy = 'popgrowth';
+      break;
+    default:
+      colorProvBy = 'province';
+  }
+  provColor();
+}
+
+function provColor(){
+  let colors;
+  switch(colorProvBy){
+    case 'region':
+      colors = {
+        "0": "#FC7E29",
+        "1": "#AF5315",
+        "2": "#FC7E29",
+        "3": "#C06500",
+        "5": "#E57325",
+        "6": "#ff7d4d",
+        "7": "#CB802C",
+        "8": "#B33E00",
+        "9": "#ff8500",
+        "10": "#D06922",
+        "11": "#FC7E29",
+        "12": "#AF5315",
+        "13": "#E97000",
+        "14": "#ff6a33",
+        "15": "#E57325",
+        "40": "#ff7d4d",
+        "41": "#D06922"
+      };
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors[provData[pId].region]);
+      });
+      break;
+    case 'population':
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].population["2020"])/3500000));
+      });
+      break;
+    case 'area':
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].area)/14000));
+      });
+      break;
+    case 'density':
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].pop_density.replace(',',''))/3000));
+      });
+      break;
+    case 'popgrowth':
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].pop_growth['2020'].replace('%',''))/3));
+      });
+      break;
+    default:
+      colors = ["#FC7E29", "#AF5315", "#E97000", "#C06500", "#E57325", "#C67317", "#CB802C", "#B33E00", "#D08C3F", "#D06922"];
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors[b % 10]);
+      });
+  }
+}
+
+function ColorLuminance(hex, lum) {
+
+	// validate hex string
+	hex = String(hex).replace(/[^0-9a-f]/gi, '');
+	if (hex.length < 6) {
+		hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+	}
+	lum = lum || 0;
+
+	// convert to decimal and change luminosity
+	var rgb = "#", c, i;
+	for (i = 0; i < 3; i++) {
+		c = parseInt(hex.substr(i*2,2), 16);
+		c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+		rgb += ("00"+c).substr(c.length);
+	}
+
+	return rgb;
 }
