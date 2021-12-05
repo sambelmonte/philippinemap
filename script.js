@@ -197,7 +197,7 @@ function setLabels(pretitle, title, subtitle, data={}) {
 
   const details = d3.select('#data-details-container-container').html("").style("max-height", "0px");
   detailList.forEach(detail => {
-    if (data[detail.name] && data[detail.name] !== "") {
+    if (data[detail.name] && data[detail.name] !== "" && data[detail.name] !== "0") {
       const detailDiv = details.insert("div")
         .attr("id", `data-details-${detail.name}`)
         .attr("class", `data-details-${detail.name}`);
