@@ -21,8 +21,8 @@ const YEAR = "2020";
 
 let colorProvBy = "province";
 
-const fileURL = "";
-// const fileURL = "https://sambelmonte.github.io/philippinemap/";
+// const fileURL = "";
+const fileURL = "https://sambelmonte.github.io/philippinemap/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
@@ -307,14 +307,14 @@ function provColor(){
       prov.each((a, b, c) => {
         const pId = c[b].id;
         const pdata = d3.select(`#${pId}`);
-        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].population["2020"])/3500000));
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].population["2020"])/3000000));
       });
       break;
     case 'area':
       prov.each((a, b, c) => {
         const pId = c[b].id;
         const pdata = d3.select(`#${pId}`);
-        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].area)/14000));
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].area)/10000));
       });
       break;
     case 'density':
@@ -328,7 +328,7 @@ function provColor(){
       prov.each((a, b, c) => {
         const pId = c[b].id;
         const pdata = d3.select(`#${pId}`);
-        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].pop_growth['2020'].replace('%',''))/3));
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].pop_growth['2020'].replace('%',''))/2.75));
       });
       break;
     default:
