@@ -21,8 +21,8 @@ const YEAR = "2020";
 
 let colorProvBy = "province";
 
-// const fileURL = "";
-const fileURL = "https://sambelmonte.github.io/philippinemap/";
+const fileURL = "";
+// const fileURL = "https://sambelmonte.github.io/philippinemap/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
