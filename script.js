@@ -20,9 +20,10 @@ const PHDATA = {
 const YEAR = "2020";
 
 let colorProvBy = "province";
+let chosen = null;
 
-// const fileURL = "";
-const fileURL = "https://sambelmonte.github.io/philippinemap/";
+const fileURL = "";
+// const fileURL = "https://sambelmonte.github.io/philippinemap/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
@@ -43,6 +44,24 @@ d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
     .on("click", clicked);
   switches = d3.selectAll(".map-switch-button")
     .on("click", switched);
+
+  // querystring
+  const objUrlParams = new URLSearchParams(window.location.search);
+  if (objUrlParams.has('code')) {
+    const code = objUrlParams.get('code');
+    const [provCode, munCode] = code.split('-');
+    try {
+      if (munCode && munData[code]) {
+        chosen = {
+          provCode,
+          code
+        };
+      } else if (provData[provCode]) {
+        chosen = { provCode };
+      }
+    } catch (_) {}
+  }
+
   reset();
 });
 
@@ -60,7 +79,7 @@ d3.json(`${fileURL}region_data.json`).then((regDataJson) => {
 //   console.log(event.target.parentNode.id)
 // }
 
-function reset() {
+function reset(event) {
   prov.classed("selectedlgu", false).classed("lgu", true);
   provColor();
   d3.selectAll(".full-lgu").attr("display", "block").raise();
@@ -68,13 +87,19 @@ function reset() {
   d3.selectAll(".lgu-city").raise();
   d3.selectAll(".text").attr("display", "block").classed("text-not-chosen", false).raise();
   d3.selectAll(".municipality").classed("class", "municipality");
-  setLabels("","PHILIPPINES","", PHDATA);
-  svg.transition()
-    .duration(750)
-    .attr("viewBox", [original_x, original_y, original_width, original_height]);
+  if (!event && chosen && chosen !== "") {
+    show(chosen.provCode, chosen.code);
+  } else {
+    chosen = null;
+    setLabels("","PHILIPPINES","", PHDATA);
+    svg.transition()
+      .duration(750)
+      .attr("viewBox", [original_x, original_y, original_width, original_height]);
+  }
 }
 
 function clicked(event) {
+  event.stopPropagation();
   if (event.target.parentNode.classList.contains('selectedmunicipality') ||
       event.target.parentNode.parentNode.classList.contains('selectedmunicipality')) {
     return;
@@ -82,13 +107,23 @@ function clicked(event) {
   const provId = event.target.parentNode.id
     ? event.target.parentNode.id.substring(0, 3)
     : event.target.parentNode.parentNode.id.substring(0, 3);
+  if (event.target.parentNode.classList.contains('full-lgu') ||
+        event.target.classList.contains('text') ||
+        event.target.parentNode.classList.contains('text')) {
+    show(provId, null);
+  } else if (event.target.parentNode.classList.contains('municipality') ||
+      event.target.parentNode.parentNode.classList.contains('municipality')) {
+    show(provId, event.target.parentNode.id);
+  }
+}
+
+function show(provId, munId) {
   const {
     x,
     y,
     width,
     height
   } = document.getElementById(`${provId}-00`).getBBox();
-  event.stopPropagation();
   d3.select(".selectedlgu").classed("selectedlgu", false);
   d3.selectAll(".full-lgu").attr("display", "block").raise();
   d3.selectAll(".lgu-city").raise();
@@ -98,20 +133,12 @@ function clicked(event) {
   d3.select("#"+provId).classed("selectedlgu", true).classed("lgu", false).raise();
   d3.selectAll(".municipality").attr("class", "municipality");
   svg.transition().duration(750).attr("viewBox", [x-75, y-75, width+150, height+150]);
-  if (event.target.parentNode.classList.contains('full-lgu') ||
-        event.target.classList.contains('text') ||
-        event.target.parentNode.classList.contains('text')) {
-    setLabels(
-      provData[provId].region !== 0
-        ? regData[provData[provId].region.toString()].name.toUpperCase()
-        : "",
-      provData[provId].name.toUpperCase(),
-      "",
-      provData[provId]
-    );
-  } else if (event.target.parentNode.classList.contains('municipality') ||
-      event.target.parentNode.parentNode.classList.contains('municipality')) {
-    const mun = munData[event.target.parentNode.id];
+  if (munId) {
+    chosen = {
+      provCode: provId,
+      munCode: munId
+    };
+    const mun = munData[munId];
     setLabels(
       regData[mun.region.toString()].name.toUpperCase(),
       (mun.official_name !== ""
@@ -125,7 +152,18 @@ function clicked(event) {
         : "",
       mun
     );
-    d3.select("#"+event.target.parentNode.id).attr("class", "municipality selectedmunicipality").raise();
+    d3.select("#"+munId).attr("class", "municipality selectedmunicipality").raise();
+  } else {
+    chosen = { provCode: provId };
+    const province = provData[provId];
+    setLabels(
+      province.region !== 0
+        ? regData[province.region.toString()].name.toUpperCase()
+        : "",
+      province.name.toUpperCase(),
+      "",
+      province
+    );
   }
 }
 
