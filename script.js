@@ -1,7 +1,7 @@
 
 let original_x, original_y, original_width, original_height;
 
-let svg, prov, muns, munData, provData, regData, switches;
+let svg, prov, muns, munData, provData, regData, colorSwitches, modeSwitches;
 
 const PHDATA = {
   capital: "Manila",
@@ -19,11 +19,11 @@ const PHDATA = {
 
 const YEAR = "2020";
 
-let colorProvBy = "province";
+let colorProvBy = "boundary";
 let chosen = null;
 
-const fileURL = "";
-// const fileURL = "https://sambelmonte.github.io/philippinemap/";
+// const fileURL = "";
+const fileURL = "https://sambelmonte.github.io/philippinemap/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
@@ -42,8 +42,11 @@ d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
     // .on("mouseover", mouseovered)
     // .on("mouseout", mouseout)
     .on("click", clicked);
-  switches = d3.selectAll(".map-switch-button")
+  muns = d3.selectAll(".municipality");
+  colorSwitches = d3.selectAll(".map-switch-button")
     .on("click", switched);
+  modeSwitches = d3.selectAll(".map-switch-mode")
+    .on("click", modeChange);
 
   // querystring
   const objUrlParams = new URLSearchParams(window.location.search);
@@ -82,11 +85,11 @@ d3.json(`${fileURL}region_data.json`).then((regDataJson) => {
 function reset(event) {
   prov.classed("selectedlgu", false).classed("lgu", true);
   provColor();
-  d3.selectAll(".full-lgu").attr("display", "block").raise();
+  d3.selectAll(".full-lgu").attr("fill", "auto").classed("selectedlgu", false).raise();
   d3.selectAll(".full-province").attr("display", "none");
   d3.selectAll(".lgu-city").raise();
   d3.selectAll(".text").attr("display", "block").classed("text-not-chosen", false).raise();
-  d3.selectAll(".municipality").classed("class", "municipality");
+  d3.selectAll(".municipality").attr("class", "municipality");
   if (!event && chosen && chosen !== "") {
     show(chosen.provCode, chosen.code);
   } else {
@@ -124,12 +127,12 @@ function show(provId, munId) {
     width,
     height
   } = document.getElementById(`${provId}-00`).getBBox();
-  d3.select(".selectedlgu").classed("selectedlgu", false);
-  d3.selectAll(".full-lgu").attr("display", "block").raise();
+  d3.selectAll(".selectedlgu").classed("selectedlgu", false);
+  d3.selectAll(".full-lgu").attr("fill", "auto").raise();
   d3.selectAll(".lgu-city").raise();
   d3.selectAll(".text").attr("display", "block").classed("text-not-chosen", true).raise();
   d3.select("#"+provId).select("text").attr("display", "none");
-  d3.select("#"+provId+"-00").attr("display", "none");
+  d3.select("#"+provId+"-00").attr("fill", "none").classed("selectedlgu", true);
   d3.select("#"+provId).classed("selectedlgu", true).classed("lgu", false).raise();
   d3.selectAll(".municipality").attr("class", "municipality");
   svg.transition().duration(750).attr("viewBox", [x-75, y-75, width+150, height+150]);
@@ -219,6 +222,11 @@ const detailList = [
   {
     name: 'barangays',
     type: 'count',
+  },
+  {
+    name: 'cong_district',
+    label: 'cong. district',
+    type: 'congdistrict',
   }
 ]
 
@@ -262,6 +270,8 @@ function setLabels(pretitle, title, subtitle, data={}) {
           ? `${numberWithCommas(data[detail.name])}/sq km`
           : detail.type === 'yearcount'
           ? numberWithCommas(data[detail.name][YEAR])
+          : detail.type === 'congdistrict'
+          ? congDistrict(data)
           : numberWithCommas(data[detail.name])
         );
     }
@@ -287,8 +297,90 @@ function typeSwitch(type) {
   }
 }
 
+function congDistrict(data) {
+  const distr = data.cong_shared && data.cong_shared !== ''
+    ? provData[data.cong_shared].name.trim()
+    : data.cong_district.indexOf('D') < 0
+    ? data.name.trim()
+    + (
+      data.type === 'HUC' || 
+      data.type === 'ICC' ||
+      data.type === 'CC'
+      ? ' City'
+      : ''
+    )
+    : provData[data.province].name.trim()
+  if (data.cong_district.indexOf('D') < 0 
+    && data.cong_district.indexOf('L') < 0 
+    && data.cong_district.indexOf('S') < 0 ) {
+      if (data.cong_district === '1') {
+        return '1 district';
+      } else {
+        return `${data.cong_district} districts`;
+      }
+  } else if (data.cong_district === '1S') {
+    return 'Taguig-Pateros\'s 1st';
+  } else if (data.cong_district === '1L1S') {
+    return '2 districts';
+  } else if (data.cong_district === 'LD') {
+    return `${distr}'s at-large`;
+  } else if (data.cong_district === '1D') {
+    return `${distr}'s 1st`;
+  } else if (data.cong_district === '2D') {
+    return `${distr}'s 2nd`;
+  } else if (data.cong_district === '3D') {
+    return `${distr}'s 3rd`;
+  } else if (data.cong_district.indexOf('D') > 0) {
+    return `${distr}'s ${data.cong_district.charAt(0)}th`;
+  } else if (data.cong_district === '1L') {
+    return `${distr}'s at-large`;
+  } else {
+    return `${data.cong_district.charAt(0)} districts`;
+  }
+}
+
+function modeChange(event) {
+  const toggle = !d3.select(`#${event.target.id}`).classed('map-switch-clicked');
+  d3.select(`#${event.target.id}`).classed('map-switch-clicked', toggle);
+  switch(event.target.id) {
+    case 'map-mode-province':
+      d3.selectAll('.full-lgu').classed('hide-lgu', toggle);
+      if (toggle) {
+        d3.select(`#${event.target.id}`).html('Show Provinces');
+      } else {
+        d3.select(`#${event.target.id}`).html('Hide Provinces');
+      }
+      break;
+    case 'map-mode-names':
+      d3.selectAll('.text').classed('hide-text', toggle);
+      if (toggle) {
+        d3.select(`#${event.target.id}`).html('Show Names');
+      } else {
+        d3.select(`#${event.target.id}`).html('Hide Names');
+      }
+      break;
+    case 'map-mode-details':
+      d3.select('.data-details').classed('hide-data-details', toggle);
+      if (toggle) {
+        d3.select(`#${event.target.id}`).html('Show Details');
+      } else {
+        d3.select(`#${event.target.id}`).html('Hide Details');
+      }
+      break;
+    case 'map-mode-guides':
+      d3.selectAll('.guide').classed('hide-guide', toggle);
+      if (toggle) {
+        d3.select(`#${event.target.id}`).html('Show Guides');
+      } else {
+        d3.select(`#${event.target.id}`).html('Hide Guides');
+      }
+      break;
+    default:
+  }
+}
+
 function switched(event) {
-  switches.classed('map-switch-clicked', false);
+  colorSwitches.classed('map-switch-clicked', false);
   d3.select(`#${event.target.id}`).classed('map-switch-clicked', true);
   switch(event.target.id) {
     case 'map-switch-reg':
@@ -306,39 +398,118 @@ function switched(event) {
     case 'map-switch-growth':
       colorProvBy = 'popgrowth';
       break;
+    case 'map-switch-congress':
+      colorProvBy = 'congdistrict';
+      break;
+    case 'map-switch-type':
+      colorProvBy = 'type';
+      break;
     default:
-      colorProvBy = 'province';
+      colorProvBy = 'boundary';
   }
   provColor();
 }
 
+const colors = {
+  region: {
+    prov: {
+      "0": "#FC7E29",
+      "1": "#AF5315",
+      "2": "#FC7E29",
+      "3": "#C06500",
+      "5": "#E57325",
+      "6": "#ff7d4d",
+      "7": "#CB802C",
+      "8": "#B33E00",
+      "9": "#ff8500",
+      "10": "#D06922",
+      "11": "#FC7E29",
+      "12": "#AF5315",
+      "13": "#E97000",
+      "14": "#ff6a33",
+      "15": "#E57325",
+      "40": "#ff7d4d",
+      "41": "#D06922"
+    },
+    mun: {
+      "0": "#F7F6C5",
+      "1": "#F2BAC9",
+      "2": "#F3FAE1",
+      "3": "#A9DEF9",
+      "5": "#F3DAD5",
+      "6": "#CEECED",
+      "7": "#C4E8FA",
+      "8": "#F6E0C7",
+      "9": "#F3DAD5",
+      "10": "#F7F6C5",
+      "11": "#F2BAC9",
+      "12": "#F3FAE1",
+      "13": "#A9DEF9",
+      "14": "#F6E7C6",
+      "15": "#F5D8C7",
+      "40": "#F6E7C6",
+      "41": "#F5D8C7"
+    }
+  },
+  type: {
+    'REG': '#F7F6C5',
+    'PRV': '#F2BAC9',
+    'HUC': '#F3FAE1',
+    'ICC': '#A9DEF9',
+    'CC': '#F6E7C6',
+    'MUN': '#AEAEAE'
+  },
+  district: {
+    mun: {
+      "LD": "#C4E8FA",
+      "1D": "#F7F6C5",
+      "2D": "#F2BAC9",
+      "3D": "#F3FAE1",
+      "4D": "#A9DEF9",
+      "5D": "#F6E7C6",
+      "6D": "#F5D8C7",
+      "7D": "#F3DAD5",
+      "8D": "#CEECED",
+      "1L": "#FFF",
+      "2L": "#E8E8E8",
+      "3L": "#E0E0E0",
+      "4L": "#D8D8D8",
+      "5L": "#D0D0D0",
+      "6L": "#C8C8C8",
+      "1L1S": "#E8E8E8",
+      "1S": "#FFF",
+    }
+  },
+  lgu: {
+    prov: ["#FC7E29", "#AF5315", "#E97000", "#C06500", "#E57325", "#C67317", "#CB802C", "#B33E00", "#D08C3F", "#D06922"],
+    mun: ["#F7F6C5", "#F2BAC9", "#F3FAE1", "#A9DEF9", "#F6E7C6", "#F5D8C7", "#F3DAD5", "#CEECED", "#C4E8FA", "#F6E0C7", "#F3DAD5", "#FFCDB2", "#FFB4A2", "#FAD4C0"]
+  }
+}
+
 function provColor(){
-  let colors;
   switch(colorProvBy){
     case 'region':
-      colors = {
-        "0": "#FC7E29",
-        "1": "#AF5315",
-        "2": "#FC7E29",
-        "3": "#C06500",
-        "5": "#E57325",
-        "6": "#ff7d4d",
-        "7": "#CB802C",
-        "8": "#B33E00",
-        "9": "#ff8500",
-        "10": "#D06922",
-        "11": "#FC7E29",
-        "12": "#AF5315",
-        "13": "#E97000",
-        "14": "#ff6a33",
-        "15": "#E57325",
-        "40": "#ff7d4d",
-        "41": "#D06922"
-      };
       prov.each((a, b, c) => {
         const pId = c[b].id;
         const pdata = d3.select(`#${pId}`);
-        pdata.attr("fill", colors[provData[pId].region]);
+        pdata.attr("fill", colors.region.prov[provData[pId].region]);
+      });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors.region.mun[munData[pId].region]);
+      });
+      break;
+    case 'type':
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors.type[provData[pId].type]);
+      });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors.type[munData[pId].type]);
       });
       break;
     case 'population':
@@ -347,12 +518,22 @@ function provColor(){
         const pdata = d3.select(`#${pId}`);
         pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].population["2020"])/3000000));
       });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#94778B", Number(munData[pId].population["2020"])/250000));
+      });
       break;
     case 'area':
       prov.each((a, b, c) => {
         const pId = c[b].id;
         const pdata = d3.select(`#${pId}`);
         pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].area)/10000));
+      });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#94778B", Number(munData[pId].area)/1000));
       });
       break;
     case 'density':
@@ -361,6 +542,11 @@ function provColor(){
         const pdata = d3.select(`#${pId}`);
         pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].pop_density.replace(',',''))/3000));
       });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#94778B", Number(munData[pId].pop_density.replace(',',''))/2500));
+      });
       break;
     case 'popgrowth':
       prov.each((a, b, c) => {
@@ -368,13 +554,34 @@ function provColor(){
         const pdata = d3.select(`#${pId}`);
         pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].pop_growth['2020'].replace('%',''))/2.75));
       });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", ColorLuminance("#94778B", Number(munData[pId].pop_growth['2020'].replace('%',''))/4));
+      });
       break;
-    default:
-      colors = ["#FC7E29", "#AF5315", "#E97000", "#C06500", "#E57325", "#C67317", "#CB802C", "#B33E00", "#D08C3F", "#D06922"];
+    case 'congdistrict':
       prov.each((a, b, c) => {
         const pId = c[b].id;
         const pdata = d3.select(`#${pId}`);
-        pdata.attr("fill", colors[b % 10]);
+        pdata.attr("fill", ColorLuminance("#AF5315", Number(provData[pId].cong_district)/4));
+      });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors.district.mun[munData[pId].cong_district]);
+      });
+      break;
+    default:
+      prov.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors.lgu.prov[b % 10]);
+      });
+      muns.each((a, b, c) => {
+        const pId = c[b].id;
+        const pdata = d3.select(`#${pId}`);
+        pdata.attr("fill", colors.lgu.mun[b % 10]);
       });
   }
 }

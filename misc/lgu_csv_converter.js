@@ -24,7 +24,8 @@ try {
       area: munData[8],
       municipalities: munData[9],
       cities: munData[10],
-      barangays: munData[11]
+      barangays: munData[11],
+      cong_district: munData[12]
     };
   }
 

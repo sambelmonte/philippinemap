@@ -15,16 +15,20 @@ svg {
   stroke-width: 2px;
   cursor: pointer;
 }
+.hide-lgu {
+  fill: none;
+}
 .municipality {
   cursor: pointer;
-}
-.selectedlgu {
-  fill: white;
   stroke: lightgrey;
   stroke-width: 1px;
 }
+.selectedlgu {
+  stroke: #F6FEAA;
+  stroke-width: 2px;
+}
 .selectedmunicipality {
-  fill: white;
+  /* fill: white; */
   animation-name: selected;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -43,6 +47,10 @@ svg {
     stroke-width: 1px;
     stroke: dimgray;
   }
+}
+
+.hide-guide {
+  display: none;
 }
 
 /* DATA */
@@ -90,10 +98,15 @@ svg {
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */   
   cursor: pointer;
+  text-shadow: 1px 1px 1px black;
+}
+
+.hide-text {
+  display: none;
 }
 
 .text-not-chosen {
-  opacity: 15%;
+  opacity: 50%;
 }
 
 .text-province {
@@ -116,6 +129,10 @@ svg {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.hide-data-details {
+  display: none;
 }
 
 .data-label {
@@ -146,8 +163,8 @@ svg {
 #logo {
   background-image: url(logo192.png);
   background-size: contain;
-  height: 50px;
-  width: 50px;
+  height: 56px;
+  width: 56px;
   margin-bottom: 10px;
 }
 
@@ -162,19 +179,21 @@ svg {
   padding: 0 5px;
   user-select: none;
   font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 10px;
 }
 
-.map-switch-button {
+.map-switch-button, .map-switch-mode {
   background-color: midnightblue;
   border-radius: 10px;
   color: aliceblue;
   margin: 5px 0px;
-  width: 30px;
+  width: 35px;
   font-size: 7px;
   padding: 5px;
 }
 
-.map-switch-button:not(.map-switch-clicked) {
+.map-switch-button:not(.map-switch-clicked),
+.map-switch-mode {
   cursor: pointer;
 }
 

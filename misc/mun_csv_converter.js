@@ -28,7 +28,8 @@ try {
       area: munData[12],
       barangays: munData[13],
       region: munData[14],
-      province: munData[15]
+      province: munData[15],
+      cong_shared: munData[16]
     };
   }
 
