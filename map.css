@@ -32,7 +32,7 @@ svg {
   animation-name: selected;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  cursor: default;
+  cursor: pointer;
 }
 @keyframes selected {
   0% {
