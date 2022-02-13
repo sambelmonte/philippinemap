@@ -8,6 +8,7 @@ try {
     const munData = data[i].split(',');
     lguList[munData[0]] = {
       name: munData[1],
+      aka: munData[13],
       region: munData[2],
       type: munData[3],
       capital: munData[4],

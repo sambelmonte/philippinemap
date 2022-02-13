@@ -163,7 +163,12 @@ function show(provId, munId) {
       province.region !== 0
         ? regData[province.region.toString()].name.toUpperCase()
         : "",
-      province.name.toUpperCase(),
+      (province.aka && province.aka !== ""
+        ? province.aka
+        : province.type === "HUC" || province.type === "ICC"
+        ? `City of ${province.name}`
+        : province.name
+      ).toUpperCase(),
       "",
       province
     );
