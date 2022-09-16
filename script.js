@@ -7,7 +7,7 @@ const PHDATA = {
   capital: "Manila",
   area: 298170,
   regions: 17,
-  provinces: 81,
+  provinces: 82,
   cities: 146,
   municipalities: 1488,
   barangays: 42046,
