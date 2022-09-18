@@ -7,7 +7,7 @@ const PHDATA = {
   capital: "Manila",
   area: 298170,
   regions: 17,
-  provinces: 81,
+  provinces: 82,
   cities: 146,
   municipalities: 1488,
   barangays: 42046,
@@ -22,8 +22,8 @@ const YEAR = "2020";
 let colorProvBy = "boundary";
 let chosen = null;
 
-// const fileURL = "";
-const fileURL = "https://sambelmonte.github.io/philippinemap/";
+const fileURL = "";
+// const fileURL = "https://sambelmonte.github.io/philippinemap/";
 d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
