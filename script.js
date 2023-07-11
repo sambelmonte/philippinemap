@@ -8,8 +8,8 @@ const PHDATA = {
   area: 298170,
   regions: 17,
   provinces: 82,
-  cities: 146,
-  municipalities: 1488,
+  cities: 148,
+  municipalities: 1486,
   barangays: 42046,
   population: {
     "2020": 109035343
