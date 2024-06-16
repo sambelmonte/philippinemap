@@ -66,5 +66,9 @@
   "41" : {
     "name" : "Mimaropa",
     "region": "REGION 4-B"
+  },
+  "16" : {
+    "name": "Negros Island Region",
+    "region": "NIR"
   }
 }
