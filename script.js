@@ -315,7 +315,9 @@ function congDistrict(data) {
       : ''
     )
     : provData[data.province].name.trim()
-  if (data.cong_district.indexOf('D') < 0 
+  if (data.cong_district === 'NA') {
+    return 'Not applicable';
+  } else if (data.cong_district.indexOf('D') < 0 
     && data.cong_district.indexOf('L') < 0 
     && data.cong_district.indexOf('S') < 0 ) {
       if (data.cong_district === '1') {
@@ -339,8 +341,6 @@ function congDistrict(data) {
     return `${distr}'s ${data.cong_district.charAt(0)}th`;
   } else if (data.cong_district === '1L') {
     return `${distr}'s at-large`;
-  } else if (data.cong_district === 'NA') {
-    return 'Not applicable';
   } else {
     return `${data.cong_district.charAt(0)} districts`;
   }
