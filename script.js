@@ -6,11 +6,11 @@ let svg, prov, muns, munData, provData, regData, colorSwitches, modeSwitches;
 const PHDATA = {
   capital: "Manila",
   area: 298170,
-  regions: 17,
+  regions: 18,
   provinces: 82,
   cities: 149,
-  municipalities: 1485,
-  barangays: 42046,
+  municipalities: 1493,
+  barangays: 42001,
   population: {
     "2020": 109035343
   },
@@ -315,7 +315,9 @@ function congDistrict(data) {
       : ''
     )
     : provData[data.province].name.trim()
-  if (data.cong_district.indexOf('D') < 0 
+  if (data.cong_district === 'NA') {
+    return 'Not applicable';
+  } else if (data.cong_district.indexOf('D') < 0 
     && data.cong_district.indexOf('L') < 0 
     && data.cong_district.indexOf('S') < 0 ) {
       if (data.cong_district === '1') {
