@@ -17,7 +17,7 @@ const PHDATA = {
   pop_density: (112729484/298170).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
 };
 
-const YEAR = "2020";
+const YEAR = "2024";
 
 let colorProvBy = "boundary";
 let chosen = null;
