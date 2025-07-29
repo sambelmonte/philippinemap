@@ -12,9 +12,9 @@ const PHDATA = {
   municipalities: 1493,
   barangays: 42001,
   population: {
-    "2020": 109035343
+    "2024": 112729484
   },
-  pop_density: (109035343/298170).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+  pop_density: (112729484/298170).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
 };
 
 const YEAR = "2020";
@@ -24,7 +24,7 @@ let chosen = null;
 
 const fileURL = "";
 // const fileURL = "https://sambelmonte.github.io/philippinemap/";
-d3.svg(`${fileURL}PHMap2.svg`).then((svgMap) => {
+d3.svg(`${fileURL}PHMap.svg`).then((svgMap) => {
   d3.select("body").node().prepend(svgMap.documentElement);
   svg = d3.select("#PHMap");
   const {
