@@ -191,12 +191,12 @@ const detailList = [
   },
   {
     name: 'population',
-    label: 'population (2020)',
+    label: `population (${YEAR})`,
     type: 'yearcount',
   },
   {
     name: 'pop_growth',
-    label: 'pop. growth (2020)',
+    label: `pop. growth (${YEAR})`,
     type: 'yeartext',
   },
   {
@@ -205,7 +205,7 @@ const detailList = [
   },
   {
     name: 'pop_density',
-    label: 'pop. density (2020)',
+    label: `pop. density (${YEAR})`,
     type: 'density',
   },
   {
