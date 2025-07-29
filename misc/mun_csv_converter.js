@@ -47,9 +47,9 @@ try {
         '2024': munData[12]
       },
       pop_growth: {
-        '2015': `${parseInt(munData[13],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
-        '2020': `${parseInt(munData[14],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
-        '2024': `${parseInt(munData[16],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2015': `${parseFloat(munData[13],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2020': `${parseFloat(munData[14],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2024': `${parseFloat(munData[16],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
       },
       pop_density: (munData[12] / munData[17]).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}),
       area: munData[17],
@@ -62,7 +62,7 @@ try {
 
   const roar = JSON.stringify(munList);
   // console.log('munlist', munList);
-  console.log('roar', roar);
+  // console.log('roar', roar);
   fs.writeFileSync('../mun_data.json', roar);
 } catch (err) {
   console.error('error', err);

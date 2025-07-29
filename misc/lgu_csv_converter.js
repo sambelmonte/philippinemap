@@ -40,9 +40,9 @@ try {
         '2024': munData[8],
       },
       pop_growth: {
-        '2015': `${parseInt(munData[9],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
-        '2020': `${parseInt(munData[10],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
-        '2024': `${parseInt(munData[12],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2015': `${parseFloat(munData[9],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2020': `${parseFloat(munData[10],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2024': `${parseFloat(munData[12],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
       },
       pop_density: (munData[8] / munData[13]).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}),
       area: munData[13],
