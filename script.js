@@ -12,12 +12,12 @@ const PHDATA = {
   municipalities: 1493,
   barangays: 42001,
   population: {
-    "2020": 109035343
+    "2024": 112729484
   },
-  pop_density: (109035343/298170).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+  pop_density: (112729484/298170).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
 };
 
-const YEAR = "2020";
+const YEAR = "2024";
 
 let colorProvBy = "boundary";
 let chosen = null;
@@ -191,12 +191,12 @@ const detailList = [
   },
   {
     name: 'population',
-    label: 'population (2020)',
+    label: `population (${YEAR})`,
     type: 'yearcount',
   },
   {
     name: 'pop_growth',
-    label: 'pop. growth (2020)',
+    label: `pop. growth (${YEAR})`,
     type: 'yeartext',
   },
   {
@@ -205,7 +205,7 @@ const detailList = [
   },
   {
     name: 'pop_density',
-    label: 'pop. density (2020)',
+    label: `pop. density (${YEAR})`,
     type: 'density',
   },
   {

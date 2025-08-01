@@ -1,5 +1,26 @@
 const fs = require('fs');
 
+/**
+ * 0 code,
+ * 1 name,
+ * 2 region,
+ * 3 type,
+ * 4 capital,
+ * 5 population2010,
+ * 6 population2015,
+ * 7 population2020,
+ * 8 population2024,
+ * 9 growth2015,
+ * 10 growth2020,
+ * 11 growth10y,
+ * 12 growth2024,
+ * 13 area,
+ * 14 municipalities,
+ * 15 cities,
+ * 16 barangays,
+ * 17 cong_district,
+ * 18 aka
+ */
 try {
   const data = fs.readFileSync('./lgu_data.csv', 'utf8').split('\r\n');
   let lguList = {};
@@ -8,7 +29,7 @@ try {
     const munData = data[i].split(',');
     lguList[munData[0]] = {
       name: munData[1],
-      aka: munData[13],
+      aka: munData[18],
       region: munData[2],
       type: munData[3],
       capital: munData[4],
@@ -16,17 +37,19 @@ try {
         '2010': munData[5],
         '2015': munData[6],
         '2020': munData[7],
+        '2024': munData[8],
       },
       pop_growth: {
-        '2015': ((munData[6] - munData[5])/ munData[6] / 5 * 100).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%",
-        '2020': ((munData[7] - munData[6])/ munData[7] / 5 * 100).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%"
+        '2015': `${parseFloat(munData[9],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2020': `${parseFloat(munData[10],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
+        '2024': `${parseFloat(munData[12],10).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}%`,
       },
-      pop_density: (munData[7] / munData[8]).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}),
-      area: munData[8],
-      municipalities: munData[9],
-      cities: munData[10],
-      barangays: munData[11],
-      cong_district: munData[12]
+      pop_density: (munData[8] / munData[13]).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}),
+      area: munData[13],
+      municipalities: munData[14],
+      cities: munData[15],
+      barangays: munData[16],
+      cong_district: munData[17]
     };
   }
 
