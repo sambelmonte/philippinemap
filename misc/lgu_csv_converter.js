@@ -22,7 +22,7 @@ const fs = require('fs');
  * 18 aka
  */
 try {
-  const data = fs.readFileSync('./lgu_data.csv', 'utf8').split('\r\n');
+  const data = fs.readFileSync('./lgu_data.csv', 'utf8').split('\n');
   let lguList = {};
 
   for (i=1; i<data.length; i++) {

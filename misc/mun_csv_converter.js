@@ -26,7 +26,7 @@ const fs = require('fs');
  */
 
 try {
-  const data = fs.readFileSync('./mun_data.csv', 'utf8').split('\r\n');
+  const data = fs.readFileSync('./mun_data.csv', 'utf8').split('\n');
   let munList = {};
 
   for (i=1; i<data.length; i++) {
@@ -62,7 +62,7 @@ try {
 
   const roar = JSON.stringify(munList);
   // console.log('munlist', munList);
-  // console.log('roar', roar);
+  console.log('roar', roar);
   fs.writeFileSync('../mun_data.json', roar);
 } catch (err) {
   console.error('error', err);
